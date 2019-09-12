@@ -1,0 +1,16 @@
+PODS:
+  - GZIP (1.2.3)
+
+DEPENDENCIES:
+  - GZIP
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GZIP
+
+SPEC CHECKSUMS:
+  GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
+
+PODFILE CHECKSUM: 4d60644413cb0875c329c7b5ffa890904c3524b2
+
+COCOAPODS: 1.7.5
