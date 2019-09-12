@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/util/EncodingHelper.h>
-#include <Funambol/base/Log.h>
-#include <Funambol/spds/DataTransformerFactory.h>
+#include "base/util/utils.h"
+#include "base/util/EncodingHelper.h"
+#include "base/Log.h"
+#include "spds/DataTransformerFactory.h"
 
 USE_NAMESPACE
 

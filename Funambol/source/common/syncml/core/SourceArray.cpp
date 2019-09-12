@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/SourceArray.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/SourceArray.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

@@ -33,11 +33,11 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/adapter/PlatformAdapter.h>
-#include <Funambol/base/util/StringBuffer.h>
-#include <Funambol/base/util/StringMap.h>
-#include <Funambol/base/Log.h>
+#include "base/fscapi.h"
+#include "base/adapter/PlatformAdapter.h"
+#include "base/util/StringBuffer.h"
+#include "base/util/StringMap.h"
+#include "base/Log.h"
 
 BEGIN_NAMESPACE
 

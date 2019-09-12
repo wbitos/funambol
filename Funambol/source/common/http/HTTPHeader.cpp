@@ -39,9 +39,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <Funambol/http/constants.h>
-#include <Funambol/http/HTTPHeader.h>
-#include <Funambol/base/globalsdef.h>
+#include "http/constants.h"
+#include "http/HTTPHeader.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

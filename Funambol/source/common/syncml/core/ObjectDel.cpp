@@ -34,9 +34,9 @@
  */
 
 
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/base/fscapi.h>
-#include <Funambol/syncml/core/ObjectDel.h>
+#include "base/globalsdef.h"
+#include "base/fscapi.h"
+#include "syncml/core/ObjectDel.h"
 
 BEGIN_NAMESPACE
 

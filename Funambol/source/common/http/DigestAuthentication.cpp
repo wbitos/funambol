@@ -33,13 +33,13 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/Log.h>
-#include <Funambol/base/messages.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/http/constants.h>
-#include <Funambol/http/errors.h>
-#include <Funambol/http/DigestAuthentication.h>
-#include <Funambol/event/FireEvent.h>
+#include "base/Log.h"
+#include "base/messages.h"
+#include "base/util/utils.h"
+#include "http/constants.h"
+#include "http/errors.h"
+#include "http/DigestAuthentication.h"
+#include "event/FireEvent.h"
 
 USE_NAMESPACE
 

@@ -34,18 +34,18 @@
  */
 
 
-#include <Funambol/base/fscapi.h>
+#include "base/fscapi.h"
 #include <Foundation/Foundation.h>
 #include <CoreFoundation/CoreFoundation.h>
 
-#include <Funambol/http/MacTransportAgent.h>
-#include <Funambol/http/HttpConnectionHandler.h>
-#include <Funambol/http/constants.h>
-#include <Funambol/http/AbstractHttpConnection.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/util/KeyValuePair.h>
-#include <Funambol/base/util/StringBuffer.h>
-#include <Funambol/event/FireEvent.h>
+#include "http/MacTransportAgent.h"
+#include "http/HttpConnectionHandler.h"
+#include "http/constants.h"
+#include "http/AbstractHttpConnection.h"
+#include "base/util/utils.h"
+#include "base/util/KeyValuePair.h"
+#include "base/util/StringBuffer.h"
+#include "event/FireEvent.h"
 #include <pthread.h>
 #include <zlib.h>
 #include <GZIP/GZIP.h>

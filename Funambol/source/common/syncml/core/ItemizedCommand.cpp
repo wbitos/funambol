@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/ItemizedCommand.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/ItemizedCommand.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

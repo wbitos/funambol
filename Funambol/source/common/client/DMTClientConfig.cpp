@@ -33,21 +33,21 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/debug.h>
-#include <Funambol/base/errors.h>
-#include <Funambol/base/Log.h>
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/adapter/PlatformAdapter.h>
+#include "base/fscapi.h"
+#include "base/debug.h"
+#include "base/errors.h"
+#include "base/Log.h"
+#include "base/globalsdef.h"
+#include "base/util/utils.h"
+#include "base/adapter/PlatformAdapter.h"
 
-#include <Funambol/client/DMTClientConfig.h>
-#include <Funambol/spdm/constants.h>
-#include <Funambol/spdm/DMTreeFactory.h>
-#include <Funambol/spdm/DMTree.h>
-#include <Funambol/spdm/ManagementNode.h>
-#include <Funambol/spds/DefaultConfigFactory.h>
-#include <Funambol/spds/spdsutils.h>
+#include "client/DMTClientConfig.h"
+#include "spdm/constants.h"
+#include "spdm/DMTreeFactory.h"
+#include "spdm/DMTree.h"
+#include "spdm/ManagementNode.h"
+#include "spds/DefaultConfigFactory.h"
+#include "spds/spdsutils.h"
 
 USE_NAMESPACE
 

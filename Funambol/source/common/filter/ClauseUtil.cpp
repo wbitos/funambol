@@ -38,15 +38,15 @@
  * and related classes.
  */
 
-#include <Funambol/base/util/StringBuffer.h>
-#include <Funambol/filter/ClauseUtil.h>
-#include <Funambol/filter/AllClause.h>
-#include <Funambol/filter/FieldClause.h>
-#include <Funambol/filter/LogicalClause.h>
-#include <Funambol/filter/WhereClause.h>
-#include <Funambol/syncml/core/Property.h>
-#include <Funambol/syncml/core/PropParam.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/util/StringBuffer.h"
+#include "filter/ClauseUtil.h"
+#include "filter/AllClause.h"
+#include "filter/FieldClause.h"
+#include "filter/LogicalClause.h"
+#include "filter/WhereClause.h"
+#include "syncml/core/Property.h"
+#include "syncml/core/PropParam.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

@@ -33,12 +33,12 @@
  * feasible for technical reasons, the Appropriate Legal Notices must display
  * the words "Powered by Funambol".
  */
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/spds/spdsutils.h>
-#include <Funambol/base/quoted-printable.h>
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/syncml/core/SyncType.h>
+#include "base/fscapi.h"
+#include "base/util/utils.h"
+#include "spds/spdsutils.h"
+#include "base/quoted-printable.h"
+#include "base/globalsdef.h"
+#include "syncml/core/SyncType.h"
 
 
 #define BASE64 "base64"

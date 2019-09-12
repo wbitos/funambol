@@ -34,10 +34,10 @@
  */
 
 
-#include <Funambol/spds/SyncSourceReport.h>
-#include <Funambol/spds/SyncReport.h>
-#include <Funambol/spds/ItemReport.h>
-#include <Funambol/base/globalsdef.h>
+#include "spds/SyncSourceReport.h"
+#include "spds/SyncReport.h"
+#include "spds/ItemReport.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

@@ -34,12 +34,12 @@
  */
 
 
-#include <Funambol/base/util/utils.h>
-#include <Funambol/http/HttpUploader.h>
-#include <Funambol/http/BasicAuthentication.h>
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/inputStream/BufferInputStream.h>
-#include <Funambol/inputStream/StringOutputStream.h>
+#include "base/util/utils.h"
+#include "http/HttpUploader.h"
+#include "http/BasicAuthentication.h"
+#include "base/globalsdef.h"
+#include "inputStream/BufferInputStream.h"
+#include "inputStream/StringOutputStream.h"
 
 BEGIN_FUNAMBOL_NAMESPACE
 

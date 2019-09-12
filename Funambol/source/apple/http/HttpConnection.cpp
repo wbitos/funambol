@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/http/HttpConnection.h>
-#include <Funambol/http/HttpConnectionHandler.h>
-#include <Funambol/base/util/stringUtils.h>
-#include <Funambol/inputStream/AppleBufferInputStream.h>
+#include "http/HttpConnection.h"
+#include "http/HttpConnectionHandler.h"
+#include "base/util/stringUtils.h"
+#include "inputStream/AppleBufferInputStream.h"
 
 #include <Foundation/Foundation.h>
 #include <CoreFoundation/CoreFoundation.h>

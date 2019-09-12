@@ -33,18 +33,18 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/Log.h>
-//#include <Funambol/client/SyncClient.h>
-#include <Funambol/client/CacheSyncSource.h>
-#include <Funambol/base/adapter/PlatformAdapter.h>
+#include "base/fscapi.h"
+#include "base/Log.h"
+//#include "client/SyncClient.h"
+#include "client/CacheSyncSource.h"
+#include "base/adapter/PlatformAdapter.h"
 
-#include <Funambol/spds/spdsutils.h>
-#include <Funambol/spds/SyncSourceConfig.h>
+#include "spds/spdsutils.h"
+#include "spds/SyncSourceConfig.h"
 
-#include <Funambol/base/util/KeyValuePair.h>
-#include <Funambol/base/util/PropertyFile.h>
-#include <Funambol/base/util/ArrayListEnumeration.h>
+#include "base/util/KeyValuePair.h"
+#include "base/util/PropertyFile.h"
+#include "base/util/ArrayListEnumeration.h"
 
 BEGIN_NAMESPACE
 

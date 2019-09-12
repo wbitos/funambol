@@ -33,15 +33,15 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/Log.h>
-#include <Funambol/base/base64.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/util/XMLProcessor.h>
-#include <Funambol/syncml/core/Constants.h>
+#include "base/Log.h"
+#include "base/base64.h"
+#include "base/util/utils.h"
+#include "base/util/XMLProcessor.h"
+#include "syncml/core/Constants.h"
 
-#include <Funambol/inputStream/FileDataInputStream.h>
-#include <Funambol/inputStream/BufferInputStream.h>
-#include <Funambol/inputStream/FileInputStream.h>
+#include "inputStream/FileDataInputStream.h"
+#include "inputStream/BufferInputStream.h"
+#include "inputStream/FileInputStream.h"
 
 USE_NAMESPACE
 

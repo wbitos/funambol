@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/base64.h>
-#include <Funambol/spds/B64Decoder.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/base64.h"
+#include "spds/B64Decoder.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

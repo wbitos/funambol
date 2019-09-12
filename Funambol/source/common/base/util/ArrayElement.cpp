@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/base/util/ArrayElement.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/util/ArrayElement.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

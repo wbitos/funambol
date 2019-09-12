@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/syncml/core/Put.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/Put.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

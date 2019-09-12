@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/ResponseCommand.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/ResponseCommand.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

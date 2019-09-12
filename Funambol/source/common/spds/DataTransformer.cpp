@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/spds/DataTransformer.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/fscapi.h"
+#include "base/util/utils.h"
+#include "spds/DataTransformer.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

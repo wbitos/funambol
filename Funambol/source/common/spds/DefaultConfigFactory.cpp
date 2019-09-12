@@ -33,12 +33,12 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/debug.h>
-#include <Funambol/base/errors.h>
-#include <Funambol/base/Log.h>
-#include <Funambol/spds/DefaultConfigFactory.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/fscapi.h"
+#include "base/debug.h"
+#include "base/errors.h"
+#include "base/Log.h"
+#include "spds/DefaultConfigFactory.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/spds/CredentialHandler.h>
-#include <Funambol/base/globalsdef.h>
+#include "spds/CredentialHandler.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

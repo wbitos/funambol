@@ -34,10 +34,10 @@
  */
 
 
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/base/posixlog.h>
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/util/utils.h>
+#include "base/globalsdef.h"
+#include "base/posixlog.h"
+#include "base/fscapi.h"
+#include "base/util/utils.h"
 
 #include <unistd.h>
 

@@ -7,18 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B14F319232A42E800F6B219 /* msu in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F30D232A42E700F6B219 /* msu */; };
-		5B14F31A232A42E800F6B219 /* base in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F30E232A42E700F6B219 /* base */; };
-		5B14F31B232A42E800F6B219 /* syncml in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F30F232A42E700F6B219 /* syncml */; };
-		5B14F31C232A42E800F6B219 /* updater in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F310232A42E700F6B219 /* updater */; };
-		5B14F31D232A42E800F6B219 /* event in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F311232A42E700F6B219 /* event */; };
-		5B14F31E232A42E800F6B219 /* spdm in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F312232A42E700F6B219 /* spdm */; };
-		5B14F31F232A42E800F6B219 /* push in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F313232A42E800F6B219 /* push */; };
-		5B14F320232A42E800F6B219 /* http in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F314232A42E800F6B219 /* http */; };
-		5B14F321232A42E800F6B219 /* inputStream in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F315232A42E800F6B219 /* inputStream */; };
-		5B14F322232A42E800F6B219 /* spds in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F316232A42E800F6B219 /* spds */; };
-		5B14F323232A42E800F6B219 /* client in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F317232A42E800F6B219 /* client */; };
-		5B14F324232A42E800F6B219 /* filter in Resources */ = {isa = PBXBuildFile; fileRef = 5B14F318232A42E800F6B219 /* filter */; };
 		5B3121FA1F6A81DB006DBF9D /* CustomTransportAgent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3121F91F6A81DB006DBF9D /* CustomTransportAgent.cpp */; };
 		5B9FE1A91AFB127400987A76 /* Funambol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9FE1A81AFB127400987A76 /* Funambol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B9FE2931AFB132A00987A76 /* stringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B9FE1C51AFB132A00987A76 /* stringUtils.cpp */; };
@@ -198,6 +186,18 @@
 		5B9FE3601AFB15FB00987A76 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9FE35F1AFB15FB00987A76 /* CFNetwork.framework */; };
 		5BA9E8B51FDA37DB007D8EE0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA9E8B41FDA37DA007D8EE0 /* libsqlite3.tbd */; };
 		61BB60CD562AA16D954C96EB /* Pods_Funambol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3126499395DB029B9B94D4 /* Pods_Funambol.framework */; };
+		FAA97038232AA8AC00C56F22 /* event in Resources */ = {isa = PBXBuildFile; fileRef = FAA9702C232AA8AB00C56F22 /* event */; };
+		FAA97039232AA8AC00C56F22 /* msu in Resources */ = {isa = PBXBuildFile; fileRef = FAA9702D232AA8AB00C56F22 /* msu */; };
+		FAA9703A232AA8AC00C56F22 /* spds in Resources */ = {isa = PBXBuildFile; fileRef = FAA9702E232AA8AB00C56F22 /* spds */; };
+		FAA9703B232AA8AC00C56F22 /* filter in Resources */ = {isa = PBXBuildFile; fileRef = FAA9702F232AA8AB00C56F22 /* filter */; };
+		FAA9703C232AA8AC00C56F22 /* syncml in Resources */ = {isa = PBXBuildFile; fileRef = FAA97030232AA8AB00C56F22 /* syncml */; };
+		FAA9703D232AA8AC00C56F22 /* inputStream in Resources */ = {isa = PBXBuildFile; fileRef = FAA97031232AA8AB00C56F22 /* inputStream */; };
+		FAA9703E232AA8AC00C56F22 /* base in Resources */ = {isa = PBXBuildFile; fileRef = FAA97032232AA8AB00C56F22 /* base */; };
+		FAA9703F232AA8AC00C56F22 /* push in Resources */ = {isa = PBXBuildFile; fileRef = FAA97033232AA8AC00C56F22 /* push */; };
+		FAA97040232AA8AC00C56F22 /* spdm in Resources */ = {isa = PBXBuildFile; fileRef = FAA97034232AA8AC00C56F22 /* spdm */; };
+		FAA97041232AA8AC00C56F22 /* http in Resources */ = {isa = PBXBuildFile; fileRef = FAA97035232AA8AC00C56F22 /* http */; };
+		FAA97042232AA8AC00C56F22 /* updater in Resources */ = {isa = PBXBuildFile; fileRef = FAA97036232AA8AC00C56F22 /* updater */; };
+		FAA97043232AA8AC00C56F22 /* client in Resources */ = {isa = PBXBuildFile; fileRef = FAA97037232AA8AC00C56F22 /* client */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -213,20 +213,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5B14F30D232A42E700F6B219 /* msu */ = {isa = PBXFileReference; lastKnownFileType = folder; name = msu; path = include/Funambol/msu; sourceTree = "<group>"; };
-		5B14F30E232A42E700F6B219 /* base */ = {isa = PBXFileReference; lastKnownFileType = folder; name = base; path = include/Funambol/base; sourceTree = "<group>"; };
-		5B14F30F232A42E700F6B219 /* syncml */ = {isa = PBXFileReference; lastKnownFileType = folder; name = syncml; path = include/Funambol/syncml; sourceTree = "<group>"; };
-		5B14F310232A42E700F6B219 /* updater */ = {isa = PBXFileReference; lastKnownFileType = folder; name = updater; path = include/Funambol/updater; sourceTree = "<group>"; };
-		5B14F311232A42E700F6B219 /* event */ = {isa = PBXFileReference; lastKnownFileType = folder; name = event; path = include/Funambol/event; sourceTree = "<group>"; };
-		5B14F312232A42E700F6B219 /* spdm */ = {isa = PBXFileReference; lastKnownFileType = folder; name = spdm; path = include/Funambol/spdm; sourceTree = "<group>"; };
-		5B14F313232A42E800F6B219 /* push */ = {isa = PBXFileReference; lastKnownFileType = folder; name = push; path = include/Funambol/push; sourceTree = "<group>"; };
-		5B14F314232A42E800F6B219 /* http */ = {isa = PBXFileReference; lastKnownFileType = folder; name = http; path = include/Funambol/http; sourceTree = "<group>"; };
-		5B14F315232A42E800F6B219 /* inputStream */ = {isa = PBXFileReference; lastKnownFileType = folder; name = inputStream; path = include/Funambol/inputStream; sourceTree = "<group>"; };
-		5B14F316232A42E800F6B219 /* spds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = spds; path = include/Funambol/spds; sourceTree = "<group>"; };
-		5B14F317232A42E800F6B219 /* client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = client; path = include/Funambol/client; sourceTree = "<group>"; };
-		5B14F318232A42E800F6B219 /* filter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = filter; path = include/Funambol/filter; sourceTree = "<group>"; };
 		5B3121F91F6A81DB006DBF9D /* CustomTransportAgent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomTransportAgent.cpp; sourceTree = "<group>"; };
-		5B9596841B439FB50089600F /* GZStream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GZStream.framework; path = ../GZStream.framework; sourceTree = "<group>"; };
 		5B9FE1A31AFB127400987A76 /* Funambol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Funambol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9FE1A71AFB127400987A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9FE1A81AFB127400987A76 /* Funambol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Funambol.h; sourceTree = "<group>"; };
@@ -403,7 +390,6 @@
 		5B9FE28F1AFB132A00987A76 /* DMTreeFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DMTreeFactory.cpp; sourceTree = "<group>"; };
 		5B9FE2911AFB132A00987A76 /* DESDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DESDecoder.cpp; sourceTree = "<group>"; };
 		5B9FE2921AFB132A00987A76 /* DESEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DESEncoder.cpp; sourceTree = "<group>"; };
-		5B9FE35B1AFB15B500987A76 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		5B9FE35D1AFB15DD00987A76 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5B9FE35F1AFB15FB00987A76 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5BA9E8B41FDA37DA007D8EE0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -411,6 +397,18 @@
 		C30B91D077FB0319EF0ECB76 /* Pods-Funambol.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Funambol.distribution.xcconfig"; path = "Target Support Files/Pods-Funambol/Pods-Funambol.distribution.xcconfig"; sourceTree = "<group>"; };
 		CC3126499395DB029B9B94D4 /* Pods_Funambol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Funambol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2807413044AF374E10D044C /* Pods-Funambol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Funambol.debug.xcconfig"; path = "Target Support Files/Pods-Funambol/Pods-Funambol.debug.xcconfig"; sourceTree = "<group>"; };
+		FAA9702C232AA8AB00C56F22 /* event */ = {isa = PBXFileReference; lastKnownFileType = folder; name = event; path = include/event; sourceTree = "<group>"; };
+		FAA9702D232AA8AB00C56F22 /* msu */ = {isa = PBXFileReference; lastKnownFileType = folder; name = msu; path = include/msu; sourceTree = "<group>"; };
+		FAA9702E232AA8AB00C56F22 /* spds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = spds; path = include/spds; sourceTree = "<group>"; };
+		FAA9702F232AA8AB00C56F22 /* filter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = filter; path = include/filter; sourceTree = "<group>"; };
+		FAA97030232AA8AB00C56F22 /* syncml */ = {isa = PBXFileReference; lastKnownFileType = folder; name = syncml; path = include/syncml; sourceTree = "<group>"; };
+		FAA97031232AA8AB00C56F22 /* inputStream */ = {isa = PBXFileReference; lastKnownFileType = folder; name = inputStream; path = include/inputStream; sourceTree = "<group>"; };
+		FAA97032232AA8AB00C56F22 /* base */ = {isa = PBXFileReference; lastKnownFileType = folder; name = base; path = include/base; sourceTree = "<group>"; };
+		FAA97033232AA8AC00C56F22 /* push */ = {isa = PBXFileReference; lastKnownFileType = folder; name = push; path = include/push; sourceTree = "<group>"; };
+		FAA97034232AA8AC00C56F22 /* spdm */ = {isa = PBXFileReference; lastKnownFileType = folder; name = spdm; path = include/spdm; sourceTree = "<group>"; };
+		FAA97035232AA8AC00C56F22 /* http */ = {isa = PBXFileReference; lastKnownFileType = folder; name = http; path = include/http; sourceTree = "<group>"; };
+		FAA97036232AA8AC00C56F22 /* updater */ = {isa = PBXFileReference; lastKnownFileType = folder; name = updater; path = include/updater; sourceTree = "<group>"; };
+		FAA97037232AA8AC00C56F22 /* client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = client; path = include/client; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -865,18 +863,18 @@
 		5B9FE3421AFB136B00987A76 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				5B14F30E232A42E700F6B219 /* base */,
-				5B14F317232A42E800F6B219 /* client */,
-				5B14F311232A42E700F6B219 /* event */,
-				5B14F318232A42E800F6B219 /* filter */,
-				5B14F314232A42E800F6B219 /* http */,
-				5B14F315232A42E800F6B219 /* inputStream */,
-				5B14F30D232A42E700F6B219 /* msu */,
-				5B14F313232A42E800F6B219 /* push */,
-				5B14F312232A42E700F6B219 /* spdm */,
-				5B14F316232A42E800F6B219 /* spds */,
-				5B14F30F232A42E700F6B219 /* syncml */,
-				5B14F310232A42E700F6B219 /* updater */,
+				FAA97032232AA8AB00C56F22 /* base */,
+				FAA97037232AA8AC00C56F22 /* client */,
+				FAA9702C232AA8AB00C56F22 /* event */,
+				FAA9702F232AA8AB00C56F22 /* filter */,
+				FAA97035232AA8AC00C56F22 /* http */,
+				FAA97031232AA8AB00C56F22 /* inputStream */,
+				FAA9702D232AA8AB00C56F22 /* msu */,
+				FAA97033232AA8AC00C56F22 /* push */,
+				FAA97034232AA8AC00C56F22 /* spdm */,
+				FAA9702E232AA8AB00C56F22 /* spds */,
+				FAA97030232AA8AB00C56F22 /* syncml */,
+				FAA97036232AA8AC00C56F22 /* updater */,
 			);
 			name = header;
 			sourceTree = "<group>";
@@ -885,10 +883,8 @@
 			isa = PBXGroup;
 			children = (
 				5BA9E8B41FDA37DA007D8EE0 /* libsqlite3.tbd */,
-				5B9596841B439FB50089600F /* GZStream.framework */,
 				5B9FE35F1AFB15FB00987A76 /* CFNetwork.framework */,
 				5B9FE35D1AFB15DD00987A76 /* SystemConfiguration.framework */,
-				5B9FE35B1AFB15B500987A76 /* libsqlite3.dylib */,
 				CC3126499395DB029B9B94D4 /* Pods_Funambol.framework */,
 			);
 			name = Frameworks;
@@ -975,18 +971,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B14F324232A42E800F6B219 /* filter in Resources */,
-				5B14F31E232A42E800F6B219 /* spdm in Resources */,
-				5B14F31F232A42E800F6B219 /* push in Resources */,
-				5B14F31D232A42E800F6B219 /* event in Resources */,
-				5B14F31C232A42E800F6B219 /* updater in Resources */,
-				5B14F320232A42E800F6B219 /* http in Resources */,
-				5B14F31B232A42E800F6B219 /* syncml in Resources */,
-				5B14F322232A42E800F6B219 /* spds in Resources */,
-				5B14F319232A42E800F6B219 /* msu in Resources */,
-				5B14F321232A42E800F6B219 /* inputStream in Resources */,
-				5B14F31A232A42E800F6B219 /* base in Resources */,
-				5B14F323232A42E800F6B219 /* client in Resources */,
+				FAA97041232AA8AC00C56F22 /* http in Resources */,
+				FAA97043232AA8AC00C56F22 /* client in Resources */,
+				FAA97040232AA8AC00C56F22 /* spdm in Resources */,
+				FAA9703C232AA8AC00C56F22 /* syncml in Resources */,
+				FAA9703D232AA8AC00C56F22 /* inputStream in Resources */,
+				FAA9703B232AA8AC00C56F22 /* filter in Resources */,
+				FAA9703A232AA8AC00C56F22 /* spds in Resources */,
+				FAA9703F232AA8AC00C56F22 /* push in Resources */,
+				FAA97042232AA8AC00C56F22 /* updater in Resources */,
+				FAA9703E232AA8AC00C56F22 /* base in Resources */,
+				FAA97039232AA8AC00C56F22 /* msu in Resources */,
+				FAA97038232AA8AC00C56F22 /* event in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1332,11 +1328,11 @@
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_MODEL_TUNING = G5;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
 					ENABLE_NAMESPACE,
 					FUNAMBOL_BUILD_API,
 					FUN_IPHONE,
 					"DEBUG=1",
-					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1371,6 +1367,7 @@
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_MODEL_TUNING = G5;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
 					ENABLE_NAMESPACE,
 					FUNAMBOL_BUILD_API,
 					FUN_IPHONE,
@@ -1461,6 +1458,7 @@
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_MODEL_TUNING = G5;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
 					ENABLE_NAMESPACE,
 					FUNAMBOL_BUILD_API,
 					FUN_IPHONE,

@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/ModificationCommand.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/ModificationCommand.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

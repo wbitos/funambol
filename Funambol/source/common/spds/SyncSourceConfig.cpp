@@ -35,10 +35,10 @@
 
 
 
-#include <Funambol/spds/SyncSourceConfig.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/base/util/KeyValuePair.h>
+#include "spds/SyncSourceConfig.h"
+#include "base/util/utils.h"
+#include "base/globalsdef.h"
+#include "base/util/KeyValuePair.h"
 
 USE_NAMESPACE
 

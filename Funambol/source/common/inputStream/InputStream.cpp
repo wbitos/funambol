@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/util/utils.h>
-#include <Funambol/inputStream/InputStream.h>
+#include "base/util/utils.h"
+#include "inputStream/InputStream.h"
 
 USE_NAMESPACE
 

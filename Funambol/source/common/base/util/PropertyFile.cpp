@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/util/PropertyFile.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/util/PropertyFile.h"
+#include "base/globalsdef.h"
 
 #define REMOVED "__#REM#O#VED#__"
 

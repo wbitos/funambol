@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/util/BasicTime.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/util/BasicTime.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

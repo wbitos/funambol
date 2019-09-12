@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/event/SyncItemEvent.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/globalsdef.h>
+#include "event/SyncItemEvent.h"
+#include "base/util/utils.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

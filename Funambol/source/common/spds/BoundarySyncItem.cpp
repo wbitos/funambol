@@ -38,13 +38,13 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include <Funambol/base/util/utils.h>
-#include <Funambol/spds/BoundarySyncItem.h>
-#include <Funambol/spds/DataTransformerFactory.h>
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/inputStream/BoundaryInputStream.h>
-#include <Funambol/base/util/EncodingHelper.h>
-#include <Funambol/base/Log.h>
+#include "base/util/utils.h"
+#include "spds/BoundarySyncItem.h"
+#include "spds/DataTransformerFactory.h"
+#include "base/globalsdef.h"
+#include "inputStream/BoundaryInputStream.h"
+#include "base/util/EncodingHelper.h"
+#include "base/Log.h"
 
 USE_NAMESPACE
 

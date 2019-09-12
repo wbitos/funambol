@@ -34,9 +34,9 @@
  */
 
 
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/util/MemoryKeyValueStore.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/fscapi.h"
+#include "base/util/MemoryKeyValueStore.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
   

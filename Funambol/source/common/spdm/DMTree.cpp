@@ -35,14 +35,14 @@
 
 
 
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/Log.h>
+#include "base/fscapi.h"
+#include "base/util/utils.h"
+#include "base/Log.h"
 
-#include <Funambol/spdm/ManagementNode.h>
-#include <Funambol/spdm/DeviceManagementNode.h>
-#include <Funambol/spdm/DMTree.h>
-#include <Funambol/base/globalsdef.h>
+#include "spdm/ManagementNode.h"
+#include "spdm/DeviceManagementNode.h"
+#include "spdm/DMTree.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

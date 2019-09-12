@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/event/TransportEvent.h>
-#include <Funambol/base/globalsdef.h>
+#include "event/TransportEvent.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

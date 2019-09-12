@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/filter/FieldClause.h>
-#include <Funambol/base/globalsdef.h>
+#include "filter/FieldClause.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

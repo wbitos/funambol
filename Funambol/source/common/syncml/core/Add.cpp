@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/Add.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/Add.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

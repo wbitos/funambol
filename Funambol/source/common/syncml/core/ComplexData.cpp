@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/ComplexData.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/ComplexData.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

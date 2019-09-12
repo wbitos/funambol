@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/filter/LogicalClause.h>
-#include <Funambol/base/globalsdef.h>
+#include "filter/LogicalClause.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

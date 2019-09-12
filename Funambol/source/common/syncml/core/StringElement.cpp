@@ -39,9 +39,9 @@
 *
 */
 
-#include <Funambol/base/util/utils.h>
-#include <Funambol/syncml/core/StringElement.h>
-#include <Funambol/base/globalsdef.h>
+#include "base/util/utils.h"
+#include "syncml/core/StringElement.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

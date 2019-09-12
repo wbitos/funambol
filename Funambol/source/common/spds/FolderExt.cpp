@@ -33,11 +33,11 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/spds/FolderExt.h>
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/Log.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/util/XMLProcessor.h>
+#include "spds/FolderExt.h"
+#include "base/fscapi.h"
+#include "base/Log.h"
+#include "base/util/utils.h"
+#include "base/util/XMLProcessor.h"
 
 USE_NAMESPACE
 

@@ -34,7 +34,7 @@
 #endif
 #include <limits.h>
 #include <ctype.h>
-#include <Funambol/base/cJSON.h>
+#include "base/cJSON.h"
 
 #ifndef __GCCE__ 
 static void *(*cJSON_malloc)(size_t sz) = malloc;

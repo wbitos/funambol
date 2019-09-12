@@ -34,9 +34,9 @@
  */
 
 
-#include <Funambol/event/SyncStatusEvent.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/globalsdef.h>
+#include "event/SyncStatusEvent.h"
+#include "base/util/utils.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

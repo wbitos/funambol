@@ -33,16 +33,16 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/http/TransportAgent.h>
-#include <Funambol/http/TransportAgentFactory.h>
-#include <Funambol/http/URL.h>
-#include <Funambol/http/Proxy.h>
-#include <Funambol/base/errors.h>
-#include <Funambol/base/Log.h>
+#include "http/TransportAgent.h"
+#include "http/TransportAgentFactory.h"
+#include "http/URL.h"
+#include "http/Proxy.h"
+#include "base/errors.h"
+#include "base/Log.h"
 
-#include <Funambol/updater/Updater.h>
-#include <Funambol/updater/UpdaterConfig.h>
-#include <Funambol/updater/UpdaterUI.h>
+#include "updater/Updater.h"
+#include "updater/UpdaterConfig.h"
+#include "updater/UpdaterUI.h"
 
 
 USE_NAMESPACE

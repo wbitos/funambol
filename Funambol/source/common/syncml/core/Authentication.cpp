@@ -34,10 +34,10 @@
  */
 
 
-#include <Funambol/syncml/core/Authentication.h>
-#include <Funambol/syncml/core/Constants.h>
-#include <Funambol/syncml/core/Cred.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/Authentication.h"
+#include "syncml/core/Constants.h"
+#include "syncml/core/Cred.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

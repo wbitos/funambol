@@ -38,10 +38,10 @@
 #include <dirent.h>
 #include <time.h>
 
-#include <Funambol/base/Log.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/base/posixadapter.h>
+#include "base/Log.h"
+#include "base/util/utils.h"
+#include "base/globalsdef.h"
+#include "base/posixadapter.h"
 
 BEGIN_NAMESPACE
 

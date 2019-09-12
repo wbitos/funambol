@@ -34,9 +34,9 @@
  */
 
 
-#include <Funambol/syncml/core/SyncBody.h>
-#include <Funambol/base/Log.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/SyncBody.h"
+#include "base/Log.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/util/utils.h>
-#include <Funambol/spds/ItemReader.h>
-#include <Funambol/inputStream/InputStream.h>
-#include <Funambol/base/Log.h>
+#include "base/util/utils.h"
+#include "spds/ItemReader.h"
+#include "inputStream/InputStream.h"
+#include "base/Log.h"
 
 USE_NAMESPACE
 

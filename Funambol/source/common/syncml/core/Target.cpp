@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/base/fscapi.h>
-#include <Funambol/syncml/core/Target.h>
-#include <Funambol/syncml/core/Filter.h> // note: do not remove
-#include <Funambol/base/globalsdef.h>
+#include "base/fscapi.h"
+#include "syncml/core/Target.h"
+#include "syncml/core/Filter.h" // note: do not remove
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

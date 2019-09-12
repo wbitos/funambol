@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/Chal.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/Chal.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

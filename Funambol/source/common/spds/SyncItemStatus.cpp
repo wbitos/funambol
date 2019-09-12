@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/spds/SyncItemStatus.h>
-#include <Funambol/base/globalsdef.h>
+#include "spds/SyncItemStatus.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

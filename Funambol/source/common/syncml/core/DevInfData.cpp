@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/DevInfData.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/DevInfData.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 

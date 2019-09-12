@@ -32,32 +32,32 @@
  * feasible for technical reasons, the Appropriate Legal Notices must display
  * the words "Powered by Funambol".
  */
-#include <Funambol/base/fscapi.h>
-#include <Funambol/base/Log.h>
-#include <Funambol/base/debug.h>
-#include <Funambol/base/util/utils.h>
-#include <Funambol/base/base64.h>
-#include <Funambol/base/messages.h>
-#include <Funambol/http/TransportAgentFactory.h>
-#include <Funambol/spds/constants.h>
-#include <Funambol/spds/DataTransformer.h>
-#include <Funambol/spds/DataTransformerFactory.h>
-#include <Funambol/spds/AbstractSyncConfig.h>
-#include <Funambol/spds/SyncManager.h>
-#include <Funambol/spds/SyncMLProcessor.h>
-#include <Funambol/spds/spdsutils.h>
-#include <Funambol/syncml/core/TagNames.h>
-#include <Funambol/syncml/core/ObjectDel.h>
+#include "base/fscapi.h"
+#include "base/Log.h"
+#include "base/debug.h"
+#include "base/util/utils.h"
+#include "base/base64.h"
+#include "base/messages.h"
+#include "http/TransportAgentFactory.h"
+#include "spds/constants.h"
+#include "spds/DataTransformer.h"
+#include "spds/DataTransformerFactory.h"
+#include "spds/AbstractSyncConfig.h"
+#include "spds/SyncManager.h"
+#include "spds/SyncMLProcessor.h"
+#include "spds/spdsutils.h"
+#include "syncml/core/TagNames.h"
+#include "syncml/core/ObjectDel.h"
 
-#include <Funambol/event/FireEvent.h>
+#include "event/FireEvent.h"
 
 #include <limits.h>
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/spds/MappingsManager.h>
+#include "base/globalsdef.h"
+#include "spds/MappingsManager.h"
 
-#include <Funambol/spds/ItemReader.h>
-#include <Funambol/spds/Chunk.h>
-#include <Funambol/spds/SyncItemKeys.h>
+#include "spds/ItemReader.h"
+#include "spds/Chunk.h"
+#include "spds/SyncItemKeys.h"
 USE_NAMESPACE
 
 MappingStoreBuilder* MappingsManager::builder = NULL;

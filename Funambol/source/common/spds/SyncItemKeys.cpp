@@ -38,12 +38,12 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include <Funambol/base/util/utils.h>
-#include <Funambol/spds/DataTransformerFactory.h>
-#include <Funambol/base/globalsdef.h>
-#include <Funambol/spds/SyncItemKeys.h>
-#include <Funambol/base/Log.h>
-#include <Funambol/syncml/core/TagNames.h>
+#include "base/util/utils.h"
+#include "spds/DataTransformerFactory.h"
+#include "base/globalsdef.h"
+#include "spds/SyncItemKeys.h"
+#include "base/Log.h"
+#include "syncml/core/TagNames.h"
 
 USE_NAMESPACE
 

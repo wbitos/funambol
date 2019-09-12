@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include <Funambol/syncml/core/Mem.h>
-#include <Funambol/syncml/core/MetInf.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/Mem.h"
+#include "syncml/core/MetInf.h"
+#include "base/globalsdef.h"
 
 BEGIN_NAMESPACE
 

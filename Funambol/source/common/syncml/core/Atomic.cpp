@@ -34,8 +34,8 @@
  */
 
 
-#include <Funambol/syncml/core/Atomic.h>
-#include <Funambol/base/globalsdef.h>
+#include "syncml/core/Atomic.h"
+#include "base/globalsdef.h"
 
 USE_NAMESPACE
 
