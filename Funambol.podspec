@@ -112,10 +112,10 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "Funambol", "Funambol/**/*.{h,m,c,cpp,mm}"
   #spec.exclude_files = "Classes/Exclude"
-  spec.header_mappings_dir = 'Funambol/include/Funambol'
 
   # spec.public_header_files = "Classes/**/*.h"
   spec.public_header_files = "Funambol/include/**/*.h"
+  spec.header_mappings_dir = 'Funambol/include'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
