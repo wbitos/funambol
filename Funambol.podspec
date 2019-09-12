@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -73,6 +73,25 @@ Pod::Spec.new do |spec|
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
+  spec.ios.deployment_target = "9.0"
+  spec.osx.deployment_target = "10.9"
+  spec.watchos.deployment_target = "2.0"
+  spec.tvos.deployment_target = "9.0"
+
+  spec.ios.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' }
+  spec.ios.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUNAMBOL_BUILD_API' }
+  spec.ios.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUN_IPHONE' }
+
+  spec.osx.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' }
+  spec.osx.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUNAMBOL_BUILD_API' }
+
+  spec.watchos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' }
+  spec.watchos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUNAMBOL_BUILD_API' }
+  spec.watchos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUN_IPHONE' }
+
+  spec.tvos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' }
+  spec.tvos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUNAMBOL_BUILD_API' }
+  spec.tvos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUN_IPHONE' }
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -80,7 +99,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://www.github.com/wbitos/funambol.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/wbitos/funambol.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -96,7 +115,7 @@ Pod::Spec.new do |spec|
   spec.header_mappings_dir = 'Funambol/include/Funambol'
 
   # spec.public_header_files = "Classes/**/*.h"
-
+  spec.public_header_files = "Funambol/include/Funambol/**/*.h"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
