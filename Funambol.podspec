@@ -111,7 +111,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Funambol/source/**/*.{h,m,mm,c,cpp}"
+  spec.source_files  = "Funambol/source/apple/**/*.{h,m,mm,c,cpp}", "Funambol/source/common/**/*.{h,m,mm,c,cpp}", "Funambol/source/posix/**/*.{h,m,mm,c,cpp}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
