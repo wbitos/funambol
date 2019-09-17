@@ -78,20 +78,10 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = "2.0"
   spec.tvos.deployment_target = "9.0"
 
-  spec.ios.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' }
-  spec.ios.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUNAMBOL_BUILD_API' }
-  spec.ios.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUN_IPHONE' }
-
-  spec.osx.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' }
-  spec.osx.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUNAMBOL_BUILD_API' }
-
-  spec.watchos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' }
-  spec.watchos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUNAMBOL_BUILD_API' }
-  spec.watchos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUN_IPHONE' }
-
-  spec.tvos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' }
-  spec.tvos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUNAMBOL_BUILD_API' }
-  spec.tvos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'FUN_IPHONE' }
+  spec.ios.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
+  spec.osx.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' }
+  spec.watchos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
+  spec.tvos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -148,7 +138,6 @@ Pod::Spec.new do |spec|
 'Funambol/include/client/CacheSyncSource.h',
 'Funambol/include/client/ConfigSyncSource.h',
 'Funambol/include/client/DMTClientConfig.h',
-'Funambol/include/client/README.txt',
 'Funambol/include/client/SQLiteKeyValueStore.h',
 'Funambol/include/client/SQLKeyValueStore.h',
 'Funambol/include/client/SyncClient.h',
@@ -251,7 +240,6 @@ Pod::Spec.new do |spec|
 'Funambol/include/spds/ItemReport.h',
 'Funambol/include/spds/MappingsManager.h',
 'Funambol/include/spds/MappingStoreBuilder.h',
-'Funambol/include/spds/README.txt',
 'Funambol/include/spds/spdsutils.h',
 'Funambol/include/spds/SyncItem.h',
 'Funambol/include/spds/SyncItemKeys.h',
@@ -342,9 +330,9 @@ Pod::Spec.new do |spec|
 'Funambol/include/updater/Updater.h',
 'Funambol/include/updater/UpdaterConfig.h',
 'Funambol/include/updater/UpdaterUI.h',
-"Funambol/source/apple/**/*.{h,m,mm,c,cpp}", 
-"Funambol/source/common/**/*.{h,m,mm,c,cpp}", 
-"Funambol/source/posix/**/*.{h,m,mm,c,cpp}"
+"Funambol/source/apple/**/*.{m,mm,c,cpp}", 
+"Funambol/source/common/**/*.{m,mm,c,cpp}", 
+"Funambol/source/posix/**/*.{m,mm,c,cpp}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
