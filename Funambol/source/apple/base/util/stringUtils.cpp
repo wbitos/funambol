@@ -34,9 +34,9 @@
  */
 
 
-#include "base/util/stringUtils.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/utils.h"
+#include <Funambol/base/util/stringUtils.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/utils.h>
 
 
 BEGIN_NAMESPACE

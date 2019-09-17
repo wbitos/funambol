@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/util/utils.h"
-#include "spds/Chunk.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/spds/Chunk.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 
 USE_NAMESPACE

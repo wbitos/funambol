@@ -35,21 +35,21 @@
 
 
 
-#include "base/util/utils.h"
-#include "base/fscapi.h"
-#include "base/adapter/PlatformAdapter.h"
-#include "spdm/constants.h"
-#include "spdm/ManagementNode.h"
-#include "spdm/DeviceManagementNode.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/adapter/PlatformAdapter.h>
+#include <Funambol/spdm/constants.h>
+#include <Funambol/spdm/ManagementNode.h>
+#include <Funambol/spdm/DeviceManagementNode.h>
 
 #include <unistd.h>
 #include <sys/stat.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <dirent.h>
-#include "base/globalsdef.h"
-#include "base/posixadapter.h"
-#include "base/util/StringMap.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/posixadapter.h>
+#include <Funambol/base/util/StringMap.h>
 
 
 USE_NAMESPACE

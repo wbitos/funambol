@@ -32,12 +32,12 @@
  * feasible for technical reasons, the Appropriate Legal Notices must display
  * the words "Powered by Funambol".
  */
-#include "http/constants.h"
-#include "http/HTTPHeader.h"
-#include "http/TransportAgent.h"
-#include "base/util/KeyValuePair.h"
-#include "base/util/utils.h"
-#include "base/globalsdef.h"
+#include <Funambol/http/constants.h>
+#include <Funambol/http/HTTPHeader.h>
+#include <Funambol/http/TransportAgent.h>
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

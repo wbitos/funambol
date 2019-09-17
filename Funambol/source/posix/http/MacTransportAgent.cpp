@@ -34,21 +34,21 @@
  */
 
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 #include <Foundation/Foundation.h>
 #include <CoreFoundation/CoreFoundation.h>
 
-#include "http/MacTransportAgent.h"
-#include "http/HttpConnectionHandler.h"
-#include "http/constants.h"
-#include "http/AbstractHttpConnection.h"
-#include "base/util/utils.h"
-#include "base/util/KeyValuePair.h"
-#include "base/util/StringBuffer.h"
-#include "event/FireEvent.h"
+#include <Funambol/http/MacTransportAgent.h>
+#include <Funambol/http/HttpConnectionHandler.h>
+#include <Funambol/http/constants.h>
+#include <Funambol/http/AbstractHttpConnection.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/event/FireEvent.h>
 #include <pthread.h>
 #include <zlib.h>
-#include <GZIP/GZIP.h>
+#include <GZStream/gzstream.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 
@@ -86,6 +86,228 @@ char* MacTransportAgent::sendMessage(const char* msg, const unsigned int length)
 	return sendBuffer(msg, length);
 }
 
+bool zipData(const unsigned char *dataOriginal,const unsigned long sizeDataOriginal,unsigned char **dataCompressed,unsigned long *oSize) {
+    //printf("* Before compression:  your data is %ld bytes\n", sizeDataOriginal );
+
+    
+#pragma region compress the data
+    //////////////
+    // compress it.
+    // To compress some data, we'll use the compress()
+    // function.
+    
+    // To use the compress function, we must
+    // create a destination buffer to
+    // hold the compressed data.
+    
+    // So how big should the compressed
+    // data buffer be?
+    
+    // This may seem a bit weird at first,
+    // but the array that is to hold the compressed
+    // data must start out being AT LEAST 0.1% larger than
+    // the original size of the data, + 12 extra bytes.
+    
+    // So, we'll just play it safe and alloated 1.1x
+    // as much memory + 12 bytes (110% original + 12 bytes)
+    
+    // Now hold on, you ask.  WHY is the array
+    // that's supposed to hold the COMPRESSED
+    // data ALREADY BIGGER than the original
+    // data array?  This isn't compression!
+    // This is meaningless expansion!
+    
+    // Well, you'll see that this extra space
+    // in the compressed array is only TEMPORARY.
+    // Just suffice it to say that zlib
+    // "needs room to breathe".
+    
+    // When zlib performs compression, it will
+    // need a bit of extra room to do its work.
+    
+    // When the compress() routine returns,
+    // the compressedData array will have
+    // been AUTOMATICALLY RESIZED by ZLIB
+    // to being a smaller, compressed size.
+    
+    // We will also know the EXACT size of
+    // that compressed data by looking at
+    // the 'sizeDataCompressed' variable
+    // AFTER the compress() routine runs.
+    // That variable 'sizeDataCompressed'
+    // will updated by the compress()
+    // function when we call it!
+    
+    // Don't worry, the "compressed" data
+    // will be smaller than the original
+    // data was in the end!
+    /*
+    int z_result = compress(
+                            
+                            dataCompressed,         // destination buffer,
+                            // must be at least
+                            // (1.01X + 12) bytes as large
+                            // as source.. we made it 1.1X + 12bytes
+                            
+                            &sizeDataCompressed,    // pointer to var containing
+                            // the current size of the
+                            // destination buffer.
+                            // WHEN this function completes,
+                            // this var will be updated to
+                            // contain the NEW size of the
+                            // compressed data in bytes.
+                            
+                            dataOriginal,           // source data for compression
+                            
+                            sizeDataOriginal ) ;    // size of source data in bytes
+    */
+    int z_result = gzip_compress(dataOriginal, sizeDataOriginal, dataCompressed, oSize);
+
+    switch( z_result )
+    {
+        case Z_OK:
+            //printf("***** SUCCESS! *****\n");
+            break;
+            
+        case Z_MEM_ERROR:
+            printf("out of memory\n");
+            return false;
+            
+        case Z_BUF_ERROR:
+            return false;
+    }
+#ifdef LOG_HTTP_DATA
+    printf("*********************************************************************\n");
+    printf("* DATA COMPRESSION COMPLETE!! *\n");
+    printf("* Uncompressed Data size is %ld bytes:*\n",sizeDataOriginal);
+    printf("* This is what it looks like:\n");
+    
+    for( int i = 0; i < sizeDataOriginal; i++ )
+    {
+        putchar( dataOriginal[i] );
+    }
+    printf("\n*                                                                   *\n");
+    printf("* Compressed size is %ld bytes\n", *oSize );
+    printf("* This is what it looks like:\n");
+    
+    // Now we want to print the compressed data out.
+    // Can't just printf() it because
+    // the nulls will be all over the place, and there
+    // isn't necessarily a null at the end.
+    printf("-------- -------- -------- -------- --------\n");
+    for( int i = 0; i < *oSize; i++ )
+    {
+        printf("%02x", (*dataCompressed)[i] );
+        if (i % 4 == 3) {
+            printf(" ");
+        }
+        else if ( i % 20 == 19) {
+            printf("\n");
+        }
+    }
+    printf("\n-------- -------- -------- -------- --------\n");
+    printf("*********************************************************************\n");
+#endif
+#pragma endregion
+    return true;
+}
+
+bool unZipData(const unsigned char *dataInCompressed,const unsigned long size,unsigned char **buffer,unsigned long *oSize) {
+    
+#pragma region decompress the read-in data
+    ///////////////
+    // Next, we'll decompress that
+    // data we just read in from disk.
+    
+    // How large should we make the array
+    // into which the UNZIPPED/UNCOMPRESSED
+    // data will go?
+    
+    // WELL, there's the catch with ZLIB.
+    // You never know how big compressed data
+    // will blow out to be.  It can blow up
+    // to being anywhere from 2 times as big,
+    // or it can be (exactly the same size),
+    // or it can be up to 10 times as big
+    // or even bigger!
+    
+    // So, you can tell its a really bad idea
+    // to try to GUESS the proper size that the
+    // uncompressed data will end up being.
+    
+    // You're SUPPOSED TO HAVE SAVED THE INFORMATION
+    // about the original size of the data at
+    // the time you compress it.
+    
+    // There's a note on how to do that easily
+    // at the bottom of this file, in the end notes.
+    
+    // FOR NOW, we're just going to
+    // use the dataSizeOriginal variable.
+    //printf("*******************************\n");
+    //printf("* Decompressing your data . . .\n");
+    /*
+    //////////////
+    // now uncompress
+    int z_result = uncompress(
+                          
+                          buffer,       // destination for the uncompressed
+                          // data.  This should be the size of
+                          // the original data, which you should
+                          // already know.
+                          
+                          &sizeDataUncompressed,  // length of destination (uncompressed)
+                          // buffer
+                          
+                          dataInCompressed,   // source buffer - the compressed data
+                          
+                          size );   // length of compressed data in bytes
+     */
+    int z_result = gzip_decompress(dataInCompressed, size, buffer, oSize);
+
+    switch( z_result )
+    {
+        case Z_OK:
+            //printf("***** SUCCESS! *****\n");
+            break;
+            
+        case Z_MEM_ERROR:
+            printf("out of memory\n");
+            return false;
+            
+        case Z_BUF_ERROR:
+            printf("output buffer wasn't large enough!\n");
+            return false;
+    }
+#ifdef LOG_HTTP_DATA
+    printf("*********************************************************************\n");
+    printf("* DATA UNCOMPRESSION COMPLETE!! *\n");
+    printf("* Compressed Data size is %ld bytes:*\n",size);
+    printf("* This is what it looks like:\n");
+    printf("-------- -------- -------- -------- --------\n");
+    for( int i = 0; i < *oSize; i++ )
+    {
+        printf("%02x", dataInCompressed[i] );
+        if (i % 4 == 3) {
+            printf(" ");
+        }
+        else if ( i % 20 == 19) {
+            printf("\n");
+        }
+    }
+    printf("\n-------- -------- -------- -------- --------\n");    
+    printf("* Uncompressed size is %ld bytes\n", *oSize);
+    printf("* Your UNCOMPRESSED data looks like this:\n");
+
+    for( int i = 0 ; i < *oSize ; i++ )
+    {
+        putchar( (*buffer)[i] );
+    }
+    printf("\n*********************************************************************\n");
+#endif
+#pragma endregion
+    return true;
+}
 char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size) 
 {
     LOG.debug("MacTransportAgent::sendBuffer begin");
@@ -138,24 +360,27 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
             CFRelease(httpRequest);
             return ret;
         }
+        unsigned long buffSize = (size * 1.1) + 20;
+        unsigned char * buffer = 0;
         
-        NSData *data = [[NSData alloc] initWithBytes:data length:size];
-        CFDataRef bodyData = (CFDataRef)[data gzippedData];
-        
+        zipData((unsigned char *)data, size, &buffer, &buffSize);
+        CFDataRef bodyData = CFDataCreate(kCFAllocatorDefault, (const UInt8*)buffer, buffSize);	
         if (!bodyData){
             LOG.error("MacTransportAgent::sendMessage error: CFDataCreate Error.");
             setError(ERR_NETWORK_INIT, "MacTransportAgent::sendMessage error: CFDataCreate Error.");
             
             CFRelease(httpRequest);
+            CFRelease(bodyData);
+            free(buffer);
             return ret;
-        }
+        }        
         CFHTTPMessageSetBody(httpRequest, bodyData);
 
         // For user agent, content length and accept encoding, override property
         // values, even if set by the caller.
         setProperty(TA_PropertyUserAgent, getUserAgent());
         //setProperty(TA_PropertyContentLength, StringBuffer().append(size));
-        setProperty(TA_PropertyContentLength, StringBuffer().append([bodyData length]));
+        setProperty(TA_PropertyContentLength, StringBuffer().append(buffSize));
         setProperty(TA_PropertyUncompressedContentLength, StringBuffer().append(size));
         setProperty(TA_PropertyContentEncoding, "gzip");
         setProperty(TA_PropertyAcceptEncoding, "gzip");
@@ -193,7 +418,7 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         }
         responseProperties.clear();
 
-        fireTransportEvent([bodyData length], SEND_DATA_BEGIN);
+        fireTransportEvent(buffSize, SEND_DATA_BEGIN);
 
         CFReadStreamRef responseStream = CFReadStreamCreateForHTTPRequest(kCFAllocatorDefault, httpRequest);
         
@@ -223,7 +448,7 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         for (numretries=0; numretries < MAX_RETRIES; numretries++) {
             int res = 0;
             
-            if ((res = handler->startConnectionHandler(responseStream, (int)[bodyData length])) != 0) {
+            if ((res = handler->startConnectionHandler(responseStream, (int)buffSize)) != 0) {
                 if (res == ERR_CONNECT) {
                     LOG.error("connection failed");
                     
@@ -366,13 +591,8 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
                 
         if (encodingStr && encodingStr.length() > 0) {
             if (strcmp(encodingStr.c_str(),"gzip") == 0 && result != NULL) {
-                NSData *compressed = [[NSData alloc] initWithBytes:result length:compressLength];
-                NSData *data = [compressed gunzippedData];
-                unCompressLength = [data length];
-                
                 responseBuffer = (unsigned char *)malloc(unCompressLength);
-
-                [data getBytes:responseBuffer length:unCompressLength];
+                unZipData((unsigned char *)result,compressLength, (unsigned char **)&responseBuffer, &unCompressLength);
                 free(result);
             }
             else {
@@ -385,6 +605,7 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         
         CFRelease(httpRequest);
         CFRelease(bodyData);
+        free(buffer);
         
         CFReadStreamClose(responseStream);
         CFRelease(responseStream);

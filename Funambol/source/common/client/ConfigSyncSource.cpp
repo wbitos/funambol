@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include "client/ConfigSyncSource.h"
-#include "spdm/ManagementNode.h"
-#include "spdm/DMTree.h"
-#include "base/util/ArrayListEnumeration.h"
+#include <Funambol/client/ConfigSyncSource.h>
+#include <Funambol/spdm/ManagementNode.h>
+#include <Funambol/spdm/DMTree.h>
+#include <Funambol/base/util/ArrayListEnumeration.h>
 
 
 USE_NAMESPACE

@@ -34,10 +34,10 @@
  */
 
 
-#include "base/util/ItemContainer.h"
-#include "base/util/utils.h"
-#include "base/Log.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ItemContainer.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

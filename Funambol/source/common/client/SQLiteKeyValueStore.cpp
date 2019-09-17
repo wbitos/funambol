@@ -35,10 +35,10 @@
 
 #include <sqlite3.h>
 
-#include "client/SQLiteKeyValueStore.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/KeyValuePair.h"
-#include "base/Log.h"
+#include <Funambol/client/SQLiteKeyValueStore.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/base/Log.h>
 
     
 BEGIN_NAMESPACE

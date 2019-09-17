@@ -34,8 +34,8 @@
  */
 
 
-#include "spds/ItemReport.h"
-#include "base/globalsdef.h"
+#include <Funambol/spds/ItemReport.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

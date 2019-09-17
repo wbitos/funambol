@@ -33,11 +33,11 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
-#include "base/messages.h"
-#include "base/util/utils.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/messages.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 
 BEGIN_FUNAMBOL_NAMESPACE

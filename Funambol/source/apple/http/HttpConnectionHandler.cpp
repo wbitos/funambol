@@ -34,18 +34,18 @@
  */
 
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 #if FUN_TRANSPORT_AGENT == FUN_MAC_TRANSPORT_AGENT
 
 #include <Foundation/Foundation.h>
 #include <CoreFoundation/CoreFoundation.h>
-#include "http/HttpConnectionHandler.h"
-#include "http/constants.h"
-#include "base/util/utils.h"
-#include "base/util/KeyValuePair.h"
-#include "base/util/StringBuffer.h"
-#include "event/FireEvent.h"
+#include <Funambol/http/HttpConnectionHandler.h>
+#include <Funambol/http/constants.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/event/FireEvent.h>
 #include <pthread.h>
 #include <inttypes.h>
 

@@ -35,17 +35,17 @@
 
 #include <stdlib.h>
 
-#include "base/Log.h"  // TBR
-#include "base/util/ArrayList.h"
-#include "base/util/utils.h"
-#include "spds/constants.h"
-#include "spdm/constants.h"
-#include "spds/SyncMLProcessor.h"
-#include "spds/SyncMLBuilder.h"
-#include "spds/spdsutils.h"
+#include <Funambol/base/Log.h>  // TBR
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/spdm/constants.h>
+#include <Funambol/spds/SyncMLProcessor.h>
+#include <Funambol/spds/SyncMLBuilder.h>
+#include <Funambol/spds/spdsutils.h>
 
-#include "event/FireEvent.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/FireEvent.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

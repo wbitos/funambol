@@ -34,9 +34,9 @@
  */
 
 
-#include "syncml/core/CmdID.h"
-#include "base/util/utils.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/CmdID.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

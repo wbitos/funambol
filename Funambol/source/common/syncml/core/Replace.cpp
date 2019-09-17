@@ -34,8 +34,8 @@
  */
 
 
-#include "syncml/core/Replace.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/Replace.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

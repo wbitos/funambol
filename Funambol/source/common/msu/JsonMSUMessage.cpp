@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include "msu/JsonMSUMessage.h"
-#include "msu/MSUDeviceInfo.h"
-#include "base/Log.h"
-#include "base/cJSON.h"
+#include <Funambol/msu/JsonMSUMessage.h>
+#include <Funambol/msu/MSUDeviceInfo.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/cJSON.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

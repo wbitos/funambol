@@ -34,9 +34,9 @@
  */
 
 
-#include "base/util/utils.h"
-#include "http/URL.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/http/URL.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

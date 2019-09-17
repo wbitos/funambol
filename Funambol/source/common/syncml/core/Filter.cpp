@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include "syncml/core/Filter.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/Filter.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

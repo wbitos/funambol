@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/util/utils.h"
-#include "syncml/core/TargetRef.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/syncml/core/TargetRef.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

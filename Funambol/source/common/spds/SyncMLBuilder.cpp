@@ -35,18 +35,18 @@
 
 #include <string.h>
 
-#include "base/fscapi.h"
-#include "base/base64.h"
-#include "base/util/utils.h"
-#include "base/util/StringBuffer.h"
-#include "filter/ClauseUtil.h"
-#include "spds/constants.h"
-#include "spds/DataTransformerFactory.h"
-#include "spds/SyncItem.h"
-#include "spds/SyncMLBuilder.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/base64.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/filter/ClauseUtil.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/spds/DataTransformerFactory.h>
+#include <Funambol/spds/SyncItem.h>
+#include <Funambol/spds/SyncMLBuilder.h>
 
-#include "event/FireEvent.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/FireEvent.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

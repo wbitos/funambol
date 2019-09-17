@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/Log.h"
-#include "event/SyncItemListener.h"
+#include <Funambol/base/Log.h>
+#include <Funambol/event/SyncItemListener.h>
 
 BEGIN_NAMESPACE
 

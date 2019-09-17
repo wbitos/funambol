@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/fscapi.h"
-#include "event/FireEvent.h"
-#include "event/ManageListener.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/event/FireEvent.h>
+#include <Funambol/event/ManageListener.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

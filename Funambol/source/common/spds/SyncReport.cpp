@@ -34,8 +34,8 @@
  */
 
 
-#include "spds/SyncReport.h"
-#include "base/globalsdef.h"
+#include <Funambol/spds/SyncReport.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

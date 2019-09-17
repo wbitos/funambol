@@ -34,11 +34,11 @@
  */
 
 
-#include "base/fscapi.h"
-#include "base/util/utils.h"
-#include "spds/DeviceConfig.h"
-#include "spdm/constants.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/spds/DeviceConfig.h>
+#include <Funambol/spdm/constants.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

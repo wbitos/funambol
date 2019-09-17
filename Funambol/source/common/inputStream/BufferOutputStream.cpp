@@ -33,9 +33,9 @@
 * the words "Powered by Funambol".
 */
 
-#include "base/Log.h"
-#include "base/util/utils.h"
-#include "inputStream/BufferOutputStream.h"
+#include <Funambol/base/Log.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/inputStream/BufferOutputStream.h>
 
 USE_NAMESPACE
 

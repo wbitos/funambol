@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/util/KeyValuePair.h"
-#include "client/SQLKeyValueStore.h"
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/client/SQLKeyValueStore.h>
 
 BEGIN_NAMESPACE
 

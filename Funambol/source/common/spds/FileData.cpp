@@ -33,14 +33,14 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/fscapi.h"
-#include "base/Log.h"
-#include "base/util/XMLProcessor.h"
-#include "syncml/formatter/Formatter.h"
-#include "spds/FileData.h"
-#include "base/quoted-printable.h"
-#include "base/globalsdef.h"
-#include "base/util/EncodingHelper.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/util/XMLProcessor.h>
+#include <Funambol/syncml/formatter/Formatter.h>
+#include <Funambol/spds/FileData.h>
+#include <Funambol/base/quoted-printable.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/EncodingHelper.h>
 
 USE_NAMESPACE
 

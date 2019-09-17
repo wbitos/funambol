@@ -33,13 +33,13 @@
  * the words "Powered by Funambol".
  */
 
-#include "spds/SyncSource.h"
-#include "base/util/utils.h"
-#include "base/Log.h"
-#include "client/SyncClient.h"
-#include "spds/spdsutils.h"
-#include "spds/SyncSourceConfig.h"
-#include "base/globalsdef.h"
+#include <Funambol/spds/SyncSource.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/client/SyncClient.h>
+#include <Funambol/spds/spdsutils.h>
+#include <Funambol/spds/SyncSourceConfig.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

@@ -34,8 +34,8 @@
  */
 
 
-#include "syncml/core/Delete.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/Delete.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

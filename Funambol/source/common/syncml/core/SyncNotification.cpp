@@ -34,11 +34,11 @@
  */
 
 
-#include "base/fscapi.h"
-#include "base/Log.h"
-#include "base/util/utils.h"
-#include "syncml/core/SyncNotification.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/syncml/core/SyncNotification.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

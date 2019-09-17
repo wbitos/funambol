@@ -34,9 +34,9 @@
  */
 
 
-#include "event/SetListener.h"
-#include "event/ManageListener.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/SetListener.h>
+#include <Funambol/event/ManageListener.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

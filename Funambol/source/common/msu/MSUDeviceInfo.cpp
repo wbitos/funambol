@@ -33,7 +33,7 @@
  * the words "Powered by Funambol".
  */
 
-#include "msu/MSUDeviceInfo.h"
+#include <Funambol/msu/MSUDeviceInfo.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

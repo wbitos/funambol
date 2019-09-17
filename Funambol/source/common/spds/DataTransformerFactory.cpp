@@ -33,12 +33,12 @@
  * the words "Powered by Funambol".
  */
 
-#include "spds/DataTransformerFactory.h"
-#include "spds/B64Encoder.h"
-#include "spds/B64Decoder.h"
-#include "spds/DESEncoder.h"
-#include "spds/DESDecoder.h"
-#include "base/globalsdef.h"
+#include <Funambol/spds/DataTransformerFactory.h>
+#include <Funambol/spds/B64Encoder.h>
+#include <Funambol/spds/B64Decoder.h>
+#include <Funambol/spds/DESEncoder.h>
+#include <Funambol/spds/DESDecoder.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

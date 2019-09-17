@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/util/utils.h"
-#include "spds/DESDecoder.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/spds/DESDecoder.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

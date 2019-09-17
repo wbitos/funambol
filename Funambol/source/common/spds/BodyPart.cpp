@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/fscapi.h"
-#include "spds/BodyPart.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/spds/BodyPart.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

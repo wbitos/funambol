@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include "http/Proxy.h"
-#include "base/globalsdef.h"
+#include <Funambol/http/Proxy.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

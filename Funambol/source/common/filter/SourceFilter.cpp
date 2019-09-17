@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/util/utils.h"
-#include "filter/SourceFilter.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/filter/SourceFilter.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

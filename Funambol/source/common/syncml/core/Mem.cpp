@@ -34,8 +34,8 @@
  */
 
 
-#include "syncml/core/Mem.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/Mem.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

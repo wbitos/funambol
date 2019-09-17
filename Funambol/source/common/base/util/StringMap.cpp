@@ -35,7 +35,7 @@
 
 /** @cond DEV */
 
-#include "base/util/StringMap.h"
+#include <Funambol/base/util/StringMap.h>
 
 BEGIN_NAMESPACE
 

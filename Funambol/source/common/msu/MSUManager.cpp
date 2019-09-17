@@ -33,12 +33,12 @@
  * the words "Powered by Funambol".
  */
 
-#include "msu/MSUManager.h"
-#include "http/URL.h"
-#include "http/BasicAuthentication.h"
-#include "inputStream/BufferInputStream.h"
-#include "inputStream/StringOutputStream.h"
-#include "inputStream/BufferOutputStream.h"
+#include <Funambol/msu/MSUManager.h>
+#include <Funambol/http/URL.h>
+#include <Funambol/http/BasicAuthentication.h>
+#include <Funambol/inputStream/BufferInputStream.h>
+#include <Funambol/inputStream/StringOutputStream.h>
+#include <Funambol/inputStream/BufferOutputStream.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/Log.h"
-#include "base/base64.h"
-#include "base/util/utils.h"
-#include "inputStream/MultipleInputStream.h"
+#include <Funambol/base/Log.h>
+#include <Funambol/base/base64.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/inputStream/MultipleInputStream.h>
 
 USE_NAMESPACE
 

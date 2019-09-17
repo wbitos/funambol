@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/util/utils.h"
-#include "syncml/core/AlertCode.h"
-#include "syncml/core/SyncAlert.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/syncml/core/AlertCode.h>
+#include <Funambol/syncml/core/SyncAlert.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

@@ -32,9 +32,9 @@
  * feasible for technical reasons, the Appropriate Legal Notices must display
  * the words "Powered by Funambol".
  */
-#include "base/util/utils.h"
-#include "filter/WhereClause.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/filter/WhereClause.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

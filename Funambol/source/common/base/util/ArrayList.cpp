@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/util/ArrayList.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include "event/BaseEvent.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/BaseEvent.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

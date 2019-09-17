@@ -33,9 +33,9 @@
  * the words "Powered by Funambol".
  */
 
-#include "syncml/formatter/Formatter.h"
-#include "base/Log.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/formatter/Formatter.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

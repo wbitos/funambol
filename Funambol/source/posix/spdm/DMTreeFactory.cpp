@@ -35,11 +35,11 @@
 
 
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
-#include "spdm/DMTreeFactory.h"
-#include "spdm/DMTree.h"
-#include "base/globalsdef.h"
+#include <Funambol/spdm/DMTreeFactory.h>
+#include <Funambol/spdm/DMTree.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

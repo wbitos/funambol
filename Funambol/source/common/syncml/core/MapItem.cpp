@@ -33,8 +33,8 @@
  * the words "Powered by Funambol".
  */
 
-#include "syncml/core/MapItem.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/MapItem.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include "http/TransportAgentFactory.h"
-#include "http/MacTransportAgent.h"
+#include <Funambol/http/TransportAgentFactory.h>
+#include <Funambol/http/MacTransportAgent.h>
 
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

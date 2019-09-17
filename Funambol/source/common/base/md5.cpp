@@ -50,7 +50,7 @@
   1999-05-03 lpd Original version.
  */
 
-#include "base/md5.h"
+#include <Funambol/base/md5.h>
 #include <string.h>
 
 #undef BYTE_ORDER	/* 1 = big-endian, -1 = little-endian, 0 = unknown */

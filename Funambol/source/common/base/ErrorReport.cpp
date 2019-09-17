@@ -6,7 +6,7 @@
 //  Copyright (c) 2012年 365rili. All rights reserved.
 //
 
-#include "base/ErrorReport.h"
+#include <Funambol/base/ErrorReport.h>
 
 USE_NAMESPACE
 static ErrorReport lastErrorReport;

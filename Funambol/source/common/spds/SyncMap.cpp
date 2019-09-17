@@ -35,9 +35,9 @@
 
 
 
-#include "base/util/utils.h"
-#include "spds/SyncMap.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/utils.h>
+#include <Funambol/spds/SyncMap.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 

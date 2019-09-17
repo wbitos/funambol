@@ -34,8 +34,8 @@
 */
 
 
-#include "syncml/core/CTCap.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/CTCap.h>
+#include <Funambol/base/globalsdef.h>
 
 USE_NAMESPACE
 
