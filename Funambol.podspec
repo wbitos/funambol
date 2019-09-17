@@ -78,10 +78,25 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = "2.0"
   spec.tvos.deployment_target = "9.0"
 
-  spec.ios.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
-  spec.osx.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' }
-  spec.watchos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
-  spec.tvos.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
+
+  src_root = '$(PODS_ROOT)/Funambol'
+  
+  spec.ios.pod_target_xcconfig = { 
+    'FUNAMBOL_SRC_ROOT' => src_root,
+    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/include"',
+    'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
+  spec.osx.pod_target_xcconfig = { 
+    'FUNAMBOL_SRC_ROOT' => src_root,
+    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/include"',
+    'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' }
+  spec.watchos.pod_target_xcconfig = { 
+    'FUNAMBOL_SRC_ROOT' => src_root,
+    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/include"',
+    'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
+  spec.tvos.pod_target_xcconfig = { 
+    'FUNAMBOL_SRC_ROOT' => src_root,
+    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/include"',
+    'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' }
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
