@@ -122,6 +122,9 @@ Pod::Spec.new do |spec|
     'GCC_PREPROCESSOR_DEFINITIONS' => '"ENABLE_NAMESPACE" "FUNAMBOL_BUILD_API" "FUN_IPHONE"' 
   }
 
+  spec.framework = 'CFNetwork', 'SystemConfiguration'
+  spec.libraries = 'sqlite3'
+  
   # spec.pod_target_xcconfig = { 
   #   'FUNAMBOL_SRC_ROOT' => src_root,
   #   'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/Funambol/include"',
