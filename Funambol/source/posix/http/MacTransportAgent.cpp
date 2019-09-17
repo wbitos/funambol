@@ -48,7 +48,7 @@
 #include <Funambol/event/FireEvent.h>
 #include <pthread.h>
 #include <zlib.h>
-#include <GZStream/gzstream.h>
+#include <GZIP/GZIP.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 
@@ -76,239 +76,17 @@ MacTransportAgent::MacTransportAgent(const URL& newURL, Proxy& newProxy, unsigne
 // TODO
 // consider moving both sendMessage and sendBuffer to basic class
 char* MacTransportAgent::sendMessage(const char* msg) {
-	return sendBuffer(msg, (int)strlen(msg));
+    return sendBuffer(msg, (int)strlen(msg));
 }
 
 /*
  * msg is not expected to be a zero terminated string !!!
  */
 char* MacTransportAgent::sendMessage(const char* msg, const unsigned int length) {
-	return sendBuffer(msg, length);
+    return sendBuffer(msg, length);
 }
 
-bool zipData(const unsigned char *dataOriginal,const unsigned long sizeDataOriginal,unsigned char **dataCompressed,unsigned long *oSize) {
-    //printf("* Before compression:  your data is %ld bytes\n", sizeDataOriginal );
-
-    
-#pragma region compress the data
-    //////////////
-    // compress it.
-    // To compress some data, we'll use the compress()
-    // function.
-    
-    // To use the compress function, we must
-    // create a destination buffer to
-    // hold the compressed data.
-    
-    // So how big should the compressed
-    // data buffer be?
-    
-    // This may seem a bit weird at first,
-    // but the array that is to hold the compressed
-    // data must start out being AT LEAST 0.1% larger than
-    // the original size of the data, + 12 extra bytes.
-    
-    // So, we'll just play it safe and alloated 1.1x
-    // as much memory + 12 bytes (110% original + 12 bytes)
-    
-    // Now hold on, you ask.  WHY is the array
-    // that's supposed to hold the COMPRESSED
-    // data ALREADY BIGGER than the original
-    // data array?  This isn't compression!
-    // This is meaningless expansion!
-    
-    // Well, you'll see that this extra space
-    // in the compressed array is only TEMPORARY.
-    // Just suffice it to say that zlib
-    // "needs room to breathe".
-    
-    // When zlib performs compression, it will
-    // need a bit of extra room to do its work.
-    
-    // When the compress() routine returns,
-    // the compressedData array will have
-    // been AUTOMATICALLY RESIZED by ZLIB
-    // to being a smaller, compressed size.
-    
-    // We will also know the EXACT size of
-    // that compressed data by looking at
-    // the 'sizeDataCompressed' variable
-    // AFTER the compress() routine runs.
-    // That variable 'sizeDataCompressed'
-    // will updated by the compress()
-    // function when we call it!
-    
-    // Don't worry, the "compressed" data
-    // will be smaller than the original
-    // data was in the end!
-    /*
-    int z_result = compress(
-                            
-                            dataCompressed,         // destination buffer,
-                            // must be at least
-                            // (1.01X + 12) bytes as large
-                            // as source.. we made it 1.1X + 12bytes
-                            
-                            &sizeDataCompressed,    // pointer to var containing
-                            // the current size of the
-                            // destination buffer.
-                            // WHEN this function completes,
-                            // this var will be updated to
-                            // contain the NEW size of the
-                            // compressed data in bytes.
-                            
-                            dataOriginal,           // source data for compression
-                            
-                            sizeDataOriginal ) ;    // size of source data in bytes
-    */
-    int z_result = gzip_compress(dataOriginal, sizeDataOriginal, dataCompressed, oSize);
-
-    switch( z_result )
-    {
-        case Z_OK:
-            //printf("***** SUCCESS! *****\n");
-            break;
-            
-        case Z_MEM_ERROR:
-            printf("out of memory\n");
-            return false;
-            
-        case Z_BUF_ERROR:
-            return false;
-    }
-#ifdef LOG_HTTP_DATA
-    printf("*********************************************************************\n");
-    printf("* DATA COMPRESSION COMPLETE!! *\n");
-    printf("* Uncompressed Data size is %ld bytes:*\n",sizeDataOriginal);
-    printf("* This is what it looks like:\n");
-    
-    for( int i = 0; i < sizeDataOriginal; i++ )
-    {
-        putchar( dataOriginal[i] );
-    }
-    printf("\n*                                                                   *\n");
-    printf("* Compressed size is %ld bytes\n", *oSize );
-    printf("* This is what it looks like:\n");
-    
-    // Now we want to print the compressed data out.
-    // Can't just printf() it because
-    // the nulls will be all over the place, and there
-    // isn't necessarily a null at the end.
-    printf("-------- -------- -------- -------- --------\n");
-    for( int i = 0; i < *oSize; i++ )
-    {
-        printf("%02x", (*dataCompressed)[i] );
-        if (i % 4 == 3) {
-            printf(" ");
-        }
-        else if ( i % 20 == 19) {
-            printf("\n");
-        }
-    }
-    printf("\n-------- -------- -------- -------- --------\n");
-    printf("*********************************************************************\n");
-#endif
-#pragma endregion
-    return true;
-}
-
-bool unZipData(const unsigned char *dataInCompressed,const unsigned long size,unsigned char **buffer,unsigned long *oSize) {
-    
-#pragma region decompress the read-in data
-    ///////////////
-    // Next, we'll decompress that
-    // data we just read in from disk.
-    
-    // How large should we make the array
-    // into which the UNZIPPED/UNCOMPRESSED
-    // data will go?
-    
-    // WELL, there's the catch with ZLIB.
-    // You never know how big compressed data
-    // will blow out to be.  It can blow up
-    // to being anywhere from 2 times as big,
-    // or it can be (exactly the same size),
-    // or it can be up to 10 times as big
-    // or even bigger!
-    
-    // So, you can tell its a really bad idea
-    // to try to GUESS the proper size that the
-    // uncompressed data will end up being.
-    
-    // You're SUPPOSED TO HAVE SAVED THE INFORMATION
-    // about the original size of the data at
-    // the time you compress it.
-    
-    // There's a note on how to do that easily
-    // at the bottom of this file, in the end notes.
-    
-    // FOR NOW, we're just going to
-    // use the dataSizeOriginal variable.
-    //printf("*******************************\n");
-    //printf("* Decompressing your data . . .\n");
-    /*
-    //////////////
-    // now uncompress
-    int z_result = uncompress(
-                          
-                          buffer,       // destination for the uncompressed
-                          // data.  This should be the size of
-                          // the original data, which you should
-                          // already know.
-                          
-                          &sizeDataUncompressed,  // length of destination (uncompressed)
-                          // buffer
-                          
-                          dataInCompressed,   // source buffer - the compressed data
-                          
-                          size );   // length of compressed data in bytes
-     */
-    int z_result = gzip_decompress(dataInCompressed, size, buffer, oSize);
-
-    switch( z_result )
-    {
-        case Z_OK:
-            //printf("***** SUCCESS! *****\n");
-            break;
-            
-        case Z_MEM_ERROR:
-            printf("out of memory\n");
-            return false;
-            
-        case Z_BUF_ERROR:
-            printf("output buffer wasn't large enough!\n");
-            return false;
-    }
-#ifdef LOG_HTTP_DATA
-    printf("*********************************************************************\n");
-    printf("* DATA UNCOMPRESSION COMPLETE!! *\n");
-    printf("* Compressed Data size is %ld bytes:*\n",size);
-    printf("* This is what it looks like:\n");
-    printf("-------- -------- -------- -------- --------\n");
-    for( int i = 0; i < *oSize; i++ )
-    {
-        printf("%02x", dataInCompressed[i] );
-        if (i % 4 == 3) {
-            printf(" ");
-        }
-        else if ( i % 20 == 19) {
-            printf("\n");
-        }
-    }
-    printf("\n-------- -------- -------- -------- --------\n");    
-    printf("* Uncompressed size is %ld bytes\n", *oSize);
-    printf("* Your UNCOMPRESSED data looks like this:\n");
-
-    for( int i = 0 ; i < *oSize ; i++ )
-    {
-        putchar( (*buffer)[i] );
-    }
-    printf("\n*********************************************************************\n");
-#endif
-#pragma endregion
-    return true;
-}
-char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size) 
+char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
 {
     LOG.debug("MacTransportAgent::sendBuffer begin");
     if(!data) {
@@ -316,22 +94,22 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         setError(ERR_NETWORK_INIT, "MacTransportAgent::sendBuffer error: NULL message.");
         return NULL;
     }
-
+    
     responseSize = 0;
     responseProperties.clear();
     bool gotflags = true;
     bool isReachable = true;
-    bool noConnectionRequired = true; 
+    bool noConnectionRequired = true;
     HttpConnectionHandler* handler = NULL;
     int numretries = 0;
     char* result = NULL;   // server reply buffer
     int statusCode = -1;
     LOG.debug("Request: %s", (const char*)data);
     
-#if defined(FUN_IPHONE)    
+#if defined(FUN_IPHONE)
     SCNetworkReachabilityFlags        flags;
     SCNetworkReachabilityRef scnReachRef = SCNetworkReachabilityCreateWithName(kCFAllocatorDefault, url.host);
-
+    
     gotflags = SCNetworkReachabilityGetFlags(scnReachRef, &flags);
     isReachable = flags & kSCNetworkReachabilityFlagsReachable;
     noConnectionRequired = !(flags & kSCNetworkReachabilityFlagsConnectionRequired);
@@ -340,52 +118,49 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
     }
     CFRelease(scnReachRef);
 #endif
-
+    
     if ( gotflags && isReachable && noConnectionRequired ){
         char* ret=0;
         LOG.debug("Requesting resource %s at %s:%d", url.resource, url.host, url.port);
-
+        
         // Construct URL
         CFStringRef CFurl =  CFStringCreateWithCString(NULL, url.fullURL, kCFStringEncodingUTF8);
         CFURLRef myURL = CFURLCreateWithString(kCFAllocatorDefault, CFurl, NULL);
-
+        
         CFHTTPMessageRef httpRequest =
-            CFHTTPMessageCreateRequest(kCFAllocatorDefault, CFSTR("POST"), myURL, kCFHTTPVersion1_1);
+        CFHTTPMessageCreateRequest(kCFAllocatorDefault, CFSTR("POST"), myURL, kCFHTTPVersion1_1);
         CFRelease(CFurl);
         CFRelease(myURL);
-
+        
         if(!httpRequest){
             LOG.error("MacTransportAgent::sendMessage error: CFHTTPMessageCreateRequest Error.");
             setError(ERR_NETWORK_INIT, "MacTransportAgent::sendMessage error: CFHTTPMessageCreateRequest Error.");
             CFRelease(httpRequest);
             return ret;
         }
-        unsigned long buffSize = (size * 1.1) + 20;
-        unsigned char * buffer = 0;
         
-        zipData((unsigned char *)data, size, &buffer, &buffSize);
-        CFDataRef bodyData = CFDataCreate(kCFAllocatorDefault, (const UInt8*)buffer, buffSize);	
+        NSData *data = [[NSData alloc] initWithBytes:data length:size];
+        CFDataRef bodyData = (CFDataRef)[data gzippedData];
+        
         if (!bodyData){
             LOG.error("MacTransportAgent::sendMessage error: CFDataCreate Error.");
             setError(ERR_NETWORK_INIT, "MacTransportAgent::sendMessage error: CFDataCreate Error.");
             
             CFRelease(httpRequest);
-            CFRelease(bodyData);
-            free(buffer);
             return ret;
-        }        
+        }
         CFHTTPMessageSetBody(httpRequest, bodyData);
-
+        
         // For user agent, content length and accept encoding, override property
         // values, even if set by the caller.
         setProperty(TA_PropertyUserAgent, getUserAgent());
         //setProperty(TA_PropertyContentLength, StringBuffer().append(size));
-        setProperty(TA_PropertyContentLength, StringBuffer().append(buffSize));
+        setProperty(TA_PropertyContentLength, StringBuffer().append([bodyData length]));
         setProperty(TA_PropertyUncompressedContentLength, StringBuffer().append(size));
         setProperty(TA_PropertyContentEncoding, "gzip");
         setProperty(TA_PropertyAcceptEncoding, "gzip");
-//        setProperty(TA_PropertyConnection, "keep-alive");
-//        setProperty(TA_PropertyProxyConnection, "keep-alive");
+        //        setProperty(TA_PropertyConnection, "keep-alive");
+        //        setProperty(TA_PropertyProxyConnection, "keep-alive");
         
         if (auth) {
             if (!addHttpAuthentication(httpRequest)) {
@@ -395,7 +170,7 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         
         // set HTTP header properties
         LOG.debug("Request header:");
-
+        
         KeyValuePair p;
         for (p=requestProperties.front(); !p.null(); p=requestProperties.next()){
             const char* key = p.getKey().c_str();
@@ -407,26 +182,26 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
             }
             
             CFStringRef hdrKey =
-                CFStringCreateWithCString(NULL, key, kCFStringEncodingUTF8);
+            CFStringCreateWithCString(NULL, key, kCFStringEncodingUTF8);
             CFStringRef hdrVal =
-                CFStringCreateWithCString(NULL, val, kCFStringEncodingUTF8);
+            CFStringCreateWithCString(NULL, val, kCFStringEncodingUTF8);
             CFHTTPMessageSetHeaderFieldValue(httpRequest, hdrKey, hdrVal);
             LOG.debug("    %s: %s", key, val);
-
+            
             CFRelease(hdrKey);
             CFRelease(hdrVal);
         }
         responseProperties.clear();
-
-        fireTransportEvent(buffSize, SEND_DATA_BEGIN);
-
+        
+        fireTransportEvent([bodyData length], SEND_DATA_BEGIN);
+        
         CFReadStreamRef responseStream = CFReadStreamCreateForHTTPRequest(kCFAllocatorDefault, httpRequest);
         
         // setup proxy
-//        if (proxy.host) {
-//            
-//        }
-
+        //        if (proxy.host) {
+        //
+        //        }
+        
         NSDictionary *proxySettings = NSMakeCollectable([(NSDictionary *)CFNetworkCopySystemProxySettings() autorelease]);
         NSArray *proxies = NSMakeCollectable([(NSArray *)CFNetworkCopyProxiesForURL((CFURLRef)[NSURL URLWithString:@"https://www.365rili.com"], (CFDictionaryRef)proxySettings) autorelease]);
         NSDictionary *settings = [proxies objectAtIndex:0];
@@ -435,20 +210,20 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         if (host && port) {
             CFReadStreamSetProperty(responseStream, kCFStreamPropertyHTTPProxy, @{(__bridge NSString*)kCFStreamPropertyHTTPSProxyHost: host, (__bridge NSString*)kCFStreamPropertyHTTPSProxyPort:port,(__bridge NSString*)kCFStreamPropertyHTTPProxyHost: host, (__bridge NSString*)kCFStreamPropertyHTTPProxyPort:port});
         }
-
         
-//        CFReadStreamSetProperty(responseStream, kCFStreamPropertyHTTPProxy, @{(__bridge NSString*)kCFStreamPropertyHTTPProxyHost: host, (__bridge NSString*)kCFStreamPropertyHTTPProxyPort:port});
+        
+        //        CFReadStreamSetProperty(responseStream, kCFStreamPropertyHTTPProxy, @{(__bridge NSString*)kCFStreamPropertyHTTPProxyHost: host, (__bridge NSString*)kCFStreamPropertyHTTPProxyPort:port});
         
         // set PTHREAD_CANCEL_DEFERRED to enable cleanup handlers
         // over pthread_cancel() calls
         pthread_setcanceltype(PTHREAD_CANCEL_DEFERRED, NULL);
-
+        
         // Try MAX_RETRIES times to send http request, in case of network errors
         handler = new HttpConnectionHandler();
         for (numretries=0; numretries < MAX_RETRIES; numretries++) {
             int res = 0;
             
-            if ((res = handler->startConnectionHandler(responseStream, (int)buffSize)) != 0) {
+            if ((res = handler->startConnectionHandler(responseStream, (int)[bodyData length])) != 0) {
                 if (res == ERR_CONNECT) {
                     LOG.error("connection failed");
                     
@@ -462,11 +237,11 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
             result = (char*)handler->getRequestReponse();
             
             CFHTTPMessageRef reply = (CFHTTPMessageRef) CFReadStreamCopyProperty( responseStream, kCFStreamPropertyHTTPResponseHeader);
-
+            
             // Pull the status code from the headers
             if (reply) {
                 statusCode = (int)CFHTTPMessageGetResponseStatusCode(reply);
-
+                
                 // get properties from http header
                 LOG.debug("Response header:");
                 CFDictionaryRef dictHeaderFields = CFHTTPMessageCopyAllHeaderFields(reply);
@@ -497,7 +272,7 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
                      statusCode == 407 || statusCode >= 500 || (statusCode >= 200 && statusCode < 300)) { //don't retry in these cases 500, 401, 402, 403, 407
                 goto exit;
             }
-
+            
             // Other network error: retry.
             LOG.info("Network error writing data from client: retry %i time... for statuscode %i", numretries + 1, statusCode);
             continue;
@@ -505,7 +280,7 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         
     exit:
         delete handler;
-      
+        
         unsigned char * responseBuffer = 0;
         StringBuffer encodingStr = responseProperties.get(TA_PropertyContentEncoding);
         
@@ -522,77 +297,82 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         if (compressLengthStr && compressLengthStr.length() > 0) {
             compressLength = (unsigned long)atol((char*)(compressLengthStr.c_str()));
         }
-
+        
         
         fireTransportEvent(compressLength, RECEIVE_DATA_END);
-
+        
         setResponseCode(statusCode);
         LOG.debug("Status Code: %d", statusCode);
         
         
         switch (statusCode) {
             case 0: {
-                        LOG.debug("Http request successful.");
-
-                        // No errors, copy the response
-                        // TODO: avoid byte copy
-                        //ret = stringdup(result);
-
-                        break;
-                    }
-            case 200: {
-                          LOG.debug("Http request successful.");
-
-                          // No errors, copy the response
-                          // TODO: avoid byte copy
-                          //ret = stringdup(result);
-
-                          break;
-                      }        
-            case -1: {                    // connection error -> out code 2001
-                         setErrorF(ERR_CONNECT, "Network error in server receiving data. ");
-                         LOG.error("%s", getLastErrorMsg());
-
-                         break;
-                     }
-            case 400: {                    // 400 bad request error. TODO: retry to send the message
-                          setErrorF(ERR_SERVER_ERROR, "HTTP server error: %d. Server failure.", statusCode);
-                          LOG.debug("%s", getLastErrorMsg());
-
-                          break;
-                      }
-            case 500: {     // 500 -> out code 2052
-                          setErrorF(ERR_SERVER_ERROR, "HTTP server error: %d. Server failure.", statusCode);
-                          LOG.debug("%s", getLastErrorMsg());
-                          break;
-                      }
-            case 404: {         // 404 -> out code 2060
-                          setErrorF(ERR_HTTP_NOT_FOUND, "HTTP request error: resource not found (status %d)", statusCode);
-                          LOG.debug("%s", getLastErrorMsg());
-                          break;
-                      }
-            case 408: {   // 408 -> out code 2061
-                          setErrorF(ERR_HTTP_REQUEST_TIMEOUT, "HTTP request error: server timed out waiting for request (status %d)", statusCode);
-                          LOG.debug("%s", getLastErrorMsg());
-                          break;
-                      }
-            case 401: {   // Authentication failed
-                          setErrorF(401, "Authentication failed");
-                          LOG.debug("%s", getLastErrorMsg());
-                          //ret = stringdup(result);
-                          break;
-                      }
-
-            default: {
-                         setErrorF(statusCode, "HTTP request error: status received = %d", statusCode);
-                         LOG.error("%s", getLastErrorMsg());
-                     }
-        }
+                LOG.debug("Http request successful.");
                 
+                // No errors, copy the response
+                // TODO: avoid byte copy
+                //ret = stringdup(result);
+                
+                break;
+            }
+            case 200: {
+                LOG.debug("Http request successful.");
+                
+                // No errors, copy the response
+                // TODO: avoid byte copy
+                //ret = stringdup(result);
+                
+                break;
+            }
+            case -1: {                    // connection error -> out code 2001
+                setErrorF(ERR_CONNECT, "Network error in server receiving data. ");
+                LOG.error("%s", getLastErrorMsg());
+                
+                break;
+            }
+            case 400: {                    // 400 bad request error. TODO: retry to send the message
+                setErrorF(ERR_SERVER_ERROR, "HTTP server error: %d. Server failure.", statusCode);
+                LOG.debug("%s", getLastErrorMsg());
+                
+                break;
+            }
+            case 500: {     // 500 -> out code 2052
+                setErrorF(ERR_SERVER_ERROR, "HTTP server error: %d. Server failure.", statusCode);
+                LOG.debug("%s", getLastErrorMsg());
+                break;
+            }
+            case 404: {         // 404 -> out code 2060
+                setErrorF(ERR_HTTP_NOT_FOUND, "HTTP request error: resource not found (status %d)", statusCode);
+                LOG.debug("%s", getLastErrorMsg());
+                break;
+            }
+            case 408: {   // 408 -> out code 2061
+                setErrorF(ERR_HTTP_REQUEST_TIMEOUT, "HTTP request error: server timed out waiting for request (status %d)", statusCode);
+                LOG.debug("%s", getLastErrorMsg());
+                break;
+            }
+            case 401: {   // Authentication failed
+                setErrorF(401, "Authentication failed");
+                LOG.debug("%s", getLastErrorMsg());
+                //ret = stringdup(result);
+                break;
+            }
+                
+            default: {
+                setErrorF(statusCode, "HTTP request error: status received = %d", statusCode);
+                LOG.error("%s", getLastErrorMsg());
+            }
+        }
+        
         if (encodingStr && encodingStr.length() > 0) {
             if (strcmp(encodingStr.c_str(),"gzip") == 0 && result != NULL) {
+                NSData *compressed = [[NSData alloc] initWithBytes:result length:compressLength];
+                NSData *data = [compressed gunzippedData];
+                unCompressLength = [data length];
+                
                 responseBuffer = (unsigned char *)malloc(unCompressLength);
-                unZipData((unsigned char *)result,compressLength, (unsigned char **)&responseBuffer, &unCompressLength);
+                
+                [data getBytes:responseBuffer length:unCompressLength];
                 free(result);
             }
             else {
@@ -605,7 +385,6 @@ char * MacTransportAgent::sendBuffer(const void * data, const unsigned int size)
         
         CFRelease(httpRequest);
         CFRelease(bodyData);
-        free(buffer);
         
         CFReadStreamClose(responseStream);
         CFRelease(responseStream);
@@ -638,7 +417,7 @@ void MacTransportAgent::setAuthentication(HttpAuthentication *httpAuth) {
  *
  * @return whether or not the authentication headers were successfully added to the request.
  */
-bool MacTransportAgent::addHttpAuthentication(CFHTTPMessageRef request) 
+bool MacTransportAgent::addHttpAuthentication(CFHTTPMessageRef request)
 {
     if (!auth) {
         return false;
@@ -672,4 +451,3 @@ bool MacTransportAgent::addHttpAuthentication(CFHTTPMessageRef request)
 }
 
 END_FUNAMBOL_NAMESPACE
-
