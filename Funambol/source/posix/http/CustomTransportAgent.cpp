@@ -48,7 +48,6 @@
 #include <Funambol/event/FireEvent.h>
 #include <pthread.h>
 #include <zlib.h>
-#include <GZStream/gzstream.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 
@@ -76,7 +75,7 @@ CustomTransportAgent::CustomTransportAgent(const URL& newURL, Proxy& newProxy, u
 // TODO
 // consider moving both sendMessage and sendBuffer to basic class
 char* CustomTransportAgent::sendMessage(const char* msg) {
-	return sendMessage(msg, (unsigned int)strlen(msg));
+    return sendMessage(msg, (unsigned int)strlen(msg));
 }
 
 /*
@@ -86,7 +85,7 @@ char* CustomTransportAgent::sendMessage(const char* msg, const unsigned int leng
     if (this->sendPtr) {
         return this->sendPtr(msg, length, this->auth, this, this->context);
     }
-	return NULL;
+    return NULL;
 }
 
 void CustomTransportAgent::setSendPtr(TransportSendBufferPtr ptr) {
@@ -105,4 +104,3 @@ StringMap CustomTransportAgent::getResponseProperties() {
     return responseProperties;
 }
 END_FUNAMBOL_NAMESPACE
-
