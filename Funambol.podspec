@@ -102,6 +102,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/wbitos/funambol.git", :tag => "#{spec.version}" }
 
 
+  spec.libraries = 'c++'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -114,7 +115,7 @@ Pod::Spec.new do |spec|
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
-  spec.header_dir = "Funambol/include"
+  spec.header_dir = "Funambol"
   spec.header_mappings_dir = 'Funambol/include'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
