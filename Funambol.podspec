@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   
   spec.ios.pod_target_xcconfig = { 
     'FUNAMBOL_SRC_ROOT' => src_root,
-    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/include"',
+    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/Funambol/include"',
     'GCC_PREPROCESSOR_DEFINITIONS' => 'ENABLE_NAMESPACE' 'FUNAMBOL_BUILD_API' 'FUN_IPHONE' 
   }
   spec.osx.pod_target_xcconfig = { 
