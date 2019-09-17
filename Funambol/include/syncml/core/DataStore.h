@@ -38,13 +38,13 @@
 #define INCL_DATA_STORE
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "syncml/core/SourceRef.h"
-#include "syncml/core/ContentTypeInfo.h"
-#include "syncml/core/DSMem.h"
-#include "syncml/core/SyncCap.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/syncml/core/SourceRef.h>
+#include <Funambol/syncml/core/ContentTypeInfo.h>
+#include <Funambol/syncml/core/DSMem.h>
+#include <Funambol/syncml/core/SyncCap.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

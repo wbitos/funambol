@@ -39,9 +39,9 @@
 #define INCL_MEM
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/Mem.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/Mem.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

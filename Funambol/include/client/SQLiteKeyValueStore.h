@@ -41,9 +41,9 @@
 
 #include <sqlite3.h>
 
-#include "base/util/KeyValueStore.h"
-#include "base/util/KeyValuePair.h"
-#include "client/SQLKeyValueStore.h"
+#include <Funambol/base/util/KeyValueStore.h>
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/client/SQLKeyValueStore.h>
 
 BEGIN_NAMESPACE
 

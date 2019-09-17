@@ -36,9 +36,9 @@
 #define INCL_COMMON_ERRORS
 /** @cond DEV */
 
-#include "spdm/errors.h"
-#include "spds/errors.h"
-#include "http/errors.h"
+#include <Funambol/spdm/errors.h>
+#include <Funambol/spds/errors.h>
+#include <Funambol/http/errors.h>
 
 #define DIM_ERROR_MESSAGE 512
 

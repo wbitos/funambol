@@ -39,9 +39,9 @@
 
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "base/util/KeyValuePair.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/base/util/KeyValuePair.h>
 
 BEGIN_NAMESPACE
 

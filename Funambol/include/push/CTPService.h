@@ -38,15 +38,15 @@
 
 /** @cond DEV */
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
 
-#include "push/FThread.h"
-#include "push/FSocket.h"
-#include "push/PushListener.h"
-#include "push/CTPMessage.h"
-#include "push/CTPConfig.h"
-#include "push/CTPThreadPool.h"
+#include <Funambol/push/FThread.h>
+#include <Funambol/push/FSocket.h>
+#include <Funambol/push/PushListener.h>
+#include <Funambol/push/CTPMessage.h>
+#include <Funambol/push/CTPConfig.h>
+#include <Funambol/push/CTPThreadPool.h>
 
 /**< CTP Protocol version = 1.0 */
 #define CTP_PROTOCOL_VERSION            0x10

@@ -38,11 +38,11 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "spds/AbstractSyncConfig.h"
-#include "spds/AccessConfig.h"
-#include "spds/DeviceConfig.h"
-#include "spds/SyncSourceConfig.h"
-#include "base/globalsdef.h"
+#include <Funambol/spds/AbstractSyncConfig.h>
+#include <Funambol/spds/AccessConfig.h>
+#include <Funambol/spds/DeviceConfig.h>
+#include <Funambol/spds/SyncSourceConfig.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

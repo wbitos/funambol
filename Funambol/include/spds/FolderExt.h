@@ -37,9 +37,9 @@
 #ifndef INCL_FOLDER_EXT
 #define INCL_FOLDER_EXT
 
-#include "base/globalsdef.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/ArrayList.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/ArrayList.h>
 #define FOLDER_XNAM       "XNam"
 #define FOLDER_XVAL       "XVal"
 

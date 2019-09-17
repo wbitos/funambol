@@ -38,9 +38,9 @@
 #define INCL_RESPONSE_COMMAND
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/ItemizedCommand.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/ItemizedCommand.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

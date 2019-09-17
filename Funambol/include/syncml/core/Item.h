@@ -38,13 +38,13 @@
 #define INCL_ITEM
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "syncml/core/Target.h"
-#include "syncml/core/Source.h"
-#include "syncml/core/Meta.h"
-#include "syncml/core/ComplexData.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/syncml/core/Target.h>
+#include <Funambol/syncml/core/Source.h>
+#include <Funambol/syncml/core/Meta.h>
+#include <Funambol/syncml/core/ComplexData.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

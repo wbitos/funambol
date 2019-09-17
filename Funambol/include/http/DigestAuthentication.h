@@ -36,12 +36,12 @@
 #ifndef INCL_DIGEST_AUTHENTICATION
 #define INCL_DIGEST_AUTHENTICATION
 
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
-#include "http/URL.h"
-#include "http/Proxy.h"
-#include "http/HashProvider.h"
-#include "http/HttpAuthentication.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/http/URL.h>
+#include <Funambol/http/Proxy.h>
+#include <Funambol/http/HashProvider.h>
+#include <Funambol/http/HttpAuthentication.h>
 
 BEGIN_NAMESPACE
 

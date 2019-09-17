@@ -38,12 +38,12 @@
 #define INCL_MAP
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/AbstractCommand.h"
-#include "syncml/core/ModificationCommand.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/AbstractCommand.h>
+#include <Funambol/syncml/core/ModificationCommand.h>
 
 #define MAP_COMMAND_NAME "Map"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

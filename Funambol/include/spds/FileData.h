@@ -38,10 +38,10 @@
 #define INCL_FILEDATA
 /** @cond DEV */
 
-#include "base/util/ArrayElement.h"
-#include "base/util/WString.h"
-#include "base/util/StringBuffer.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/util/WString.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/globalsdef.h>
 
 #define FILE_ITEM       TEXT("File")
 #define FILE_HIDDEN     "h"

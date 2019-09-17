@@ -38,13 +38,13 @@
 #define INCL_SEQUENCE
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "syncml/core/AbstractCommand.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/syncml/core/AbstractCommand.h>
 
 
 #define SEQUENCE_COMMAND_NAME "Sequence"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

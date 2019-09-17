@@ -39,13 +39,13 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/fscapi.h"
-#include "base/Log.h"
-#include "base/util/utils.h"
-#include "spds/constants.h"
-#include "event/constants.h"
-#include "spds/ItemReport.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/event/constants.h>
+#include <Funambol/spds/ItemReport.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

@@ -38,12 +38,12 @@
 #define INCL_COMPLEX_DATA
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "syncml/core/Data.h"
-#include "syncml/core/Anchor.h"
-#include "syncml/core/DevInf.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/syncml/core/Data.h>
+#include <Funambol/syncml/core/Anchor.h>
+#include <Funambol/syncml/core/DevInf.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

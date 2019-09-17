@@ -39,9 +39,9 @@
 #define INCL_FILTER
 /** @cond DEV */
 
-#include "syncml/core/Item.h"
-#include "syncml/core/Meta.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/Item.h>
+#include <Funambol/syncml/core/Meta.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

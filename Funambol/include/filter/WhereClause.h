@@ -37,9 +37,9 @@
 #define INCL_WHERECLAUSE
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "filter/Clause.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/filter/Clause.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

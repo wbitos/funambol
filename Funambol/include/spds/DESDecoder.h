@@ -36,10 +36,10 @@
     #define INCL_DES_DECODER
 /** @cond DEV */
 
-    #include "spds/DataTransformer.h"
+    #include <Funambol/spds/DataTransformer.h>
 
     #define DT_DES "des"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

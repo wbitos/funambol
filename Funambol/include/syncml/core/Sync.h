@@ -38,15 +38,15 @@
 #define INCL_SYNC
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "syncml/core/AbstractCommand.h"
-#include "syncml/core/Source.h"
-#include "syncml/core/Target.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/syncml/core/AbstractCommand.h>
+#include <Funambol/syncml/core/Source.h>
+#include <Funambol/syncml/core/Target.h>
 
 
 #define SYNC_COMMAND_NAME "Sync"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

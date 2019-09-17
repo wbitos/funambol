@@ -38,10 +38,10 @@
 #define INCL_SYNC_ML
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/SyncHdr.h"
-#include "syncml/core/SyncBody.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/SyncHdr.h>
+#include <Funambol/syncml/core/SyncBody.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

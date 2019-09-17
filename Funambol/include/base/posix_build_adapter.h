@@ -38,7 +38,7 @@
 #define INCL_POSIX_BUILD_ADAPTER
 /** @cond DEV */
 
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 // Enable the fix for encoding when building for posix
 #define VOCL_ENCODING_FIX

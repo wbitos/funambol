@@ -37,8 +37,8 @@
     #define INCL_LOG
 /** @cond DEV */
 
-    #include "base/fscapi.h"
-    #include "base/util/StringBuffer.h"
+    #include <Funambol/base/fscapi.h>
+    #include <Funambol/base/util/StringBuffer.h>
 
     /** prefix for error messages */
     #define LOG_ERROR "ERROR"
@@ -49,7 +49,7 @@
 
     /** default is to create this file in the current directory */
     #define LOG_NAME "synclog.html"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

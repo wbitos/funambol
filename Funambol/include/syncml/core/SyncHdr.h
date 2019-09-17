@@ -38,17 +38,17 @@
 #define INCL_SYNC_HDR
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/VerDTD.h"
-#include "syncml/core/VerProto.h"
-#include "syncml/core/SessionID.h"
-#include "syncml/core/Target.h"
-#include "syncml/core/Source.h"
-#include "syncml/core/Cred.h"
-#include "syncml/core/Meta.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/VerDTD.h>
+#include <Funambol/syncml/core/VerProto.h>
+#include <Funambol/syncml/core/SessionID.h>
+#include <Funambol/syncml/core/Target.h>
+#include <Funambol/syncml/core/Source.h>
+#include <Funambol/syncml/core/Cred.h>
+#include <Funambol/syncml/core/Meta.h>
 
 #define SYNCHDR_COMMAND_NAME "SyncHdr"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

@@ -37,13 +37,13 @@
 #define INCL_FIRE_EVENTS
 /** @cond DEV */
 
-#include "event/BaseEvent.h"
-#include "event/SyncEvent.h"
-#include "event/SyncSourceEvent.h"
-#include "event/SyncItemEvent.h"
-#include "event/SyncStatusEvent.h"
-#include "event/TransportEvent.h"
-#include "event/constants.h"
+#include <Funambol/event/BaseEvent.h>
+#include <Funambol/event/SyncEvent.h>
+#include <Funambol/event/SyncSourceEvent.h>
+#include <Funambol/event/SyncItemEvent.h>
+#include <Funambol/event/SyncStatusEvent.h>
+#include <Funambol/event/TransportEvent.h>
+#include <Funambol/event/constants.h>
 
 BEGIN_NAMESPACE
 

@@ -36,10 +36,10 @@
 #ifndef INCL_BASIC_AUTHENTICATION
 #define INCL_BASIC_AUTHENTICATION
 
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
-#include "http/HashProvider.h"
-#include "http/HttpAuthentication.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/http/HashProvider.h>
+#include <Funambol/http/HttpAuthentication.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

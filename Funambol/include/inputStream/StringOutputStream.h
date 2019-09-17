@@ -37,9 +37,9 @@
 #define INCL_STRING_OUTPUT_STREAM
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
-#include "inputStream/OutputStream.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/inputStream/OutputStream.h>
 
 
 BEGIN_FUNAMBOL_NAMESPACE

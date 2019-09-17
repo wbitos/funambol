@@ -37,11 +37,11 @@
 #define INCL_SET_LISTENER
 /** @cond DEV */
 
-#include "event/SyncListener.h"
-#include "event/SyncSourceListener.h"
-#include "event/SyncItemListener.h"
-#include "event/SyncStatusListener.h"
-#include "event/TransportListener.h"
+#include <Funambol/event/SyncListener.h>
+#include <Funambol/event/SyncSourceListener.h>
+#include <Funambol/event/SyncItemListener.h>
+#include <Funambol/event/SyncStatusListener.h>
+#include <Funambol/event/TransportListener.h>
 
 BEGIN_NAMESPACE
 

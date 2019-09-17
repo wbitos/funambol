@@ -39,14 +39,14 @@
 /** @addtogroup Client */
 /** @{ */
 
-    #include "base/fscapi.h"
-    #include "base/Log.h"
-    #include "spds/AbstractSyncConfig.h"
-    #include "spds/SyncSource.h"
-    #include "spds/constants.h"
-    #include "spds/SyncReport.h"
-#include "base/globalsdef.h"
-#include "http/TransportAgent.h"
+    #include <Funambol/base/fscapi.h>
+    #include <Funambol/base/Log.h>
+    #include <Funambol/spds/AbstractSyncConfig.h>
+    #include <Funambol/spds/SyncSource.h>
+    #include <Funambol/spds/constants.h>
+    #include <Funambol/spds/SyncReport.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/http/TransportAgent.h>
 
 BEGIN_NAMESPACE
 

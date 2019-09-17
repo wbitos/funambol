@@ -38,13 +38,13 @@
 #define INCL_STATUS
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/ResponseCommand.h"
-#include "syncml/core/Chal.h"
-#include "syncml/core/Data.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/ResponseCommand.h>
+#include <Funambol/syncml/core/Chal.h>
+#include <Funambol/syncml/core/Data.h>
 
 #define STATUS_COMMAND_NAME "Status"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

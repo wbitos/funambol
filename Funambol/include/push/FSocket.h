@@ -36,7 +36,7 @@
 #ifndef INCL_FSOCKET
 #define INCL_FSOCKET
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -49,9 +49,9 @@ const int MAXHOSTNAME = 200;
 const int MAXCONNECTIONS = 5;
 const int MAXRECV = 500;
 
-#include "stdint.h"
-#include "base/util/StringBuffer.h"
-#include "base/globalsdef.h"
+#include <Funambol/stdint.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

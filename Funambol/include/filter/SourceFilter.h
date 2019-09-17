@@ -37,8 +37,8 @@
 #define INCL_FILTERCLAUSE
 /** @cond DEV */
 
-#include "filter/LogicalClause.h"
-#include "base/globalsdef.h"
+#include <Funambol/filter/LogicalClause.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

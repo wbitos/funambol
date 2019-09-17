@@ -36,9 +36,9 @@
 #ifndef INCL_HTTP_AUTHENTICATION
 #define INCL_HTTP_AUTHENTICATION
 
-#include "base/util/StringBuffer.h"
-#include "http/HashProvider.h"
-#include "http/URL.h"
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/http/HashProvider.h>
+#include <Funambol/http/URL.h>
 
 BEGIN_NAMESPACE
 

@@ -59,7 +59,7 @@
 
 // Workaround for wchar defines below: unit testing may depend
 // on standard header files. Include its header file first.
-//#include "base/test.h"
+//#include <Funambol/base/test.h>
 
 
 // Cygwin version of gcc does have these builtin
@@ -89,14 +89,14 @@
 #endif
 
 #ifdef FUNAMBOL_BUILD_API
-#include "base/posix_build_adapter.h"
+#include <Funambol/base/posix_build_adapter.h>
 #endif
 
 #if defined(MAC) || defined(FUN_IPHONE)
 typedef char byte;
 #endif
 
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

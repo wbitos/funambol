@@ -37,7 +37,7 @@
 #define INCL_ALERT_CODE
 /** @cond DEV */
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 
 #define DISPLAY                               100

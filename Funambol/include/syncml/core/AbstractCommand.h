@@ -39,12 +39,12 @@
 #define INCL_ABSTRACT_COMMAND
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "syncml/core/CmdID.h"
-#include "syncml/core/Meta.h"
-#include "syncml/core/Cred.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/syncml/core/CmdID.h>
+#include <Funambol/syncml/core/Meta.h>
+#include <Funambol/syncml/core/Cred.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

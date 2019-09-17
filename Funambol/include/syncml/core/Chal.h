@@ -38,11 +38,11 @@
 #define INCL_CHAL
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/utils.h"
-#include "syncml/core/Constants.h"
-#include "syncml/core/Meta.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/syncml/core/Constants.h>
+#include <Funambol/syncml/core/Meta.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

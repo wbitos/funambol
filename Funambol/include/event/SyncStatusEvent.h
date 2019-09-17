@@ -38,9 +38,9 @@
 #define INCL_SYNC_STATUS_EVENT
 /** @cond DEV */
 
-#include "event/SyncItemEvent.h"
-#include "event/constants.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/SyncItemEvent.h>
+#include <Funambol/event/constants.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

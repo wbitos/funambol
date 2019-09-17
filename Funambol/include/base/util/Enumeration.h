@@ -35,8 +35,8 @@
 
 #ifndef INCL_ENUMERATION
 #define INCL_ENUMERATION
-#include "base/globalsdef.h"
-#include "base/util/ArrayElement.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/ArrayElement.h>
 
 BEGIN_NAMESPACE
 

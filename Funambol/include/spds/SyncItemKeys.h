@@ -37,13 +37,13 @@
 #define INCL_SYNC_ITEM_KEYS
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/constants.h"
-#include "base/util/ArrayElement.h"
-#include "spds/constants.h"
-#include "spds/SyncStatus.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/constants.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/spds/SyncStatus.h>
 #include <string.h>
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

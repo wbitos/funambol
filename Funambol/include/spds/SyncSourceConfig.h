@@ -41,10 +41,10 @@
 /** @addtogroup Client */
 /** @{ */
 
-    #include "spds/AbstractSyncSourceConfig.h"
-#include "base/globalsdef.h"
-#include "base/util/StringMap.h"
-#include "base/Log.h"
+    #include <Funambol/spds/AbstractSyncSourceConfig.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/StringMap.h>
+#include <Funambol/base/Log.h>
 
 BEGIN_NAMESPACE
 

@@ -37,13 +37,13 @@
 #define INCL_MANAGEMENT_NODE
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "base/util/ArrayList.h"
-#include "spdm/constants.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/StringMap.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/spdm/constants.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/StringMap.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

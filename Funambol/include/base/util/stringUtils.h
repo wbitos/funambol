@@ -40,8 +40,8 @@
 #include <Foundation/Foundation.h>
 #include <CoreFoundation/CoreFoundation.h>
 
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 BEGIN_NAMESPACE
 

@@ -115,7 +115,7 @@
     #endif
     
     #ifdef POSIX
-        #include "base/posixadapter.h"
+        #include <Funambol/base/posixadapter.h>
         #include <sys/stat.h>
         #include <errno.h>
         #include <sys/types.h>
@@ -124,7 +124,7 @@
         #define S_ISDIR(x) (((x) & S_IFMT) == S_IFDIR)
         #endif
     #elif defined(SYMBIAN)
-        #include "base/symbianadapter.h"
+        #include <Funambol/base/symbianadapter.h>
         #include <sys/stat.h>
         #include <errno.h>
         #include <sys/types.h>
@@ -137,7 +137,7 @@
         #define WIN32_LEAN_AND_MEAN     // Exclude rarely-used stuff from Windows headers
 
         #include <windows.h>
-        #include "base/winadapter.h"
+        #include <Funambol/base/winadapter.h>
 
         #if defined(WIN32)
             #include <wininet.h>
@@ -158,8 +158,8 @@
         #endif
 
         #ifdef _WIN32_WCE
-            #include "base/time.h"
-            #include "base/stat.h" // for file handling on wm
+            #include <Funambol/base/time.h>
+            #include <Funambol/base/stat.h> // for file handling on wm
             const int errno = -1;
         #endif
     #endif
@@ -231,7 +231,7 @@
         #include <stdarg.h>
     #endif
  
-    #include "base/errors.h"
+    #include <Funambol/base/errors.h>
 
 /** @endcond */
 #endif

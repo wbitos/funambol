@@ -1,9 +1,9 @@
 #ifndef INCL_ERROR_REPORT
 #define INCL_ERROR_REPORT
 
-#include "base/fscapi.h"
-#include "base/globalsdef.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 BEGIN_NAMESPACE
 

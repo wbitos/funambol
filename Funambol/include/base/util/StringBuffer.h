@@ -37,9 +37,9 @@
 #define INCL_BASE_STRING_BUFFER
 /** @cond DEV */
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
 
 BEGIN_NAMESPACE
 

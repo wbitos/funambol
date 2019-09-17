@@ -36,10 +36,10 @@
 #define INCL_HTTP_PROXY
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/constants.h"
-#include "http/constants.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/constants.h>
+#include <Funambol/http/constants.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

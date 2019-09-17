@@ -36,8 +36,8 @@
 #define INCL_DEVICE_MANAGER
 /** @cond DEV */
 
-#include "spdm/DMTree.h"
-#include "base/globalsdef.h"
+#include <Funambol/spdm/DMTree.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

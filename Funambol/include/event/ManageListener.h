@@ -38,12 +38,12 @@
 #define INCL_MANAGE_LISTENER
 /** @cond DEV */
 
-#include "event/SyncListener.h"
-#include "event/SyncItemListener.h"
-#include "event/SyncStatusListener.h"
-#include "event/SyncSourceListener.h"
-#include "event/TransportListener.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/SyncListener.h>
+#include <Funambol/event/SyncItemListener.h>
+#include <Funambol/event/SyncStatusListener.h>
+#include <Funambol/event/SyncSourceListener.h>
+#include <Funambol/event/TransportListener.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

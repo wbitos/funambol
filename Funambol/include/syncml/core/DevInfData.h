@@ -38,10 +38,10 @@
 #define INCL_DEVINF_DATA
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/DevInf.h"
-#include "syncml/core/Data.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/DevInf.h>
+#include <Funambol/syncml/core/Data.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

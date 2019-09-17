@@ -36,7 +36,7 @@
 #define INCL_QUOTED_PRINTABLE_H
 /** @cond DEV */
 
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

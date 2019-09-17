@@ -36,12 +36,12 @@
  #ifndef INCL_BOUNDARY_SYNC_ITEM
     #define INCL_BOUNDARY_SYNC_ITEM
 /** @cond DEV */
-#include "base/fscapi.h"
-#include "base/constants.h"
-#include "base/util/ArrayElement.h"
-#include "spds/SyncItem.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/constants.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/spds/SyncItem.h>
 
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 class BoundarySyncItem : public SyncItem {

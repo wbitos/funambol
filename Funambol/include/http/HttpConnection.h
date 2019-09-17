@@ -36,7 +36,7 @@
 #ifndef __HTTP_CONNECTION_H__
 #define __HTTP_CONNECTION_H__
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 #if defined(FUN_IPHONE)
 #include <SystemConfiguration/SystemConfiguration.h>
@@ -47,13 +47,13 @@
 #include <CoreFoundation/CoreFoundation.h>
 #endif
 
-#include "http/URL.h"
-#include "http/Proxy.h"
-#include "http/TransportAgent.h"
-#include "base/Log.h"
-#include "http/HttpAuthentication.h"
-#include "http/AbstractHttpConnection.h"
-#include "inputStream/AppleInputStream.h"
+#include <Funambol/http/URL.h>
+#include <Funambol/http/Proxy.h>
+#include <Funambol/http/TransportAgent.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/http/HttpAuthentication.h>
+#include <Funambol/http/AbstractHttpConnection.h>
+#include <Funambol/inputStream/AppleInputStream.h>
 
 #define ERR_HTTP_TIME_OUT               ERR_TRANSPORT_BASE+ 7
 #define ERR_HTTP_NOT_FOUND              ERR_TRANSPORT_BASE+60

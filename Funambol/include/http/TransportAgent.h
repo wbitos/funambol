@@ -37,11 +37,11 @@
 #define INCL_TRANSPORT_AGENT
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
 
-#include "http/URL.h"
-#include "http/Proxy.h"
+#include <Funambol/http/URL.h>
+#include <Funambol/http/Proxy.h>
 
 //
 // number of seconds of waiting response timeout.
@@ -59,9 +59,9 @@
 // incoming stram from server. It is expressed in byte
 //
 #define DEFAULT_INTERNET_READ_BUFFER_SIZE  4096
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
-#include "base/util/StringMap.h"
+#include <Funambol/base/util/StringMap.h>
 
 BEGIN_NAMESPACE
 

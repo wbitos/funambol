@@ -38,11 +38,11 @@
 #define INCL_DELETE
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/ModificationCommand.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/ModificationCommand.h>
 
 #define DELETE_COMMAND_NAME "Delete"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

@@ -38,15 +38,15 @@
 #define INCL_FOLDERDATA
 /** @cond DEV */
 
-#include "base/util/ArrayElement.h"
-#include "base/util/WString.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/ArrayList.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/util/WString.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/base/globalsdef.h>
 
-//#include "base/winadapter.h"
+//#include <Funambol/base/winadapter.h>
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 BEGIN_NAMESPACE
 

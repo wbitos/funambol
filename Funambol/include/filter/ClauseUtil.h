@@ -37,10 +37,10 @@
 #define INCL_CLAUSECONVERTER
 /** @cond DEV */
 
-#include "filter/LogicalClause.h"
-#include "filter/SourceFilter.h"
-#include "syncml/core/Filter.h"
-#include "base/globalsdef.h"
+#include <Funambol/filter/LogicalClause.h>
+#include <Funambol/filter/SourceFilter.h>
+#include <Funambol/syncml/core/Filter.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

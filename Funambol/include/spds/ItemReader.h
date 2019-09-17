@@ -37,13 +37,13 @@
 #define INCL_ITEM_READER
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/constants.h"
-#include "base/globalsdef.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/EncodingHelper.h"
-#include "spds/Chunk.h"
-#include "spds/SyncItem.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/constants.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/EncodingHelper.h>
+#include <Funambol/spds/Chunk.h>
+#include <Funambol/spds/SyncItem.h>
 
 
 BEGIN_NAMESPACE

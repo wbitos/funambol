@@ -38,10 +38,10 @@
 #define INCL_SYNC_ITEM_EVENT
 /** @cond DEV */
 
-#include "event/BaseEvent.h"
-#include "spds/SyncItem.h"
-#include "spds/constants.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/BaseEvent.h>
+#include <Funambol/spds/SyncItem.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

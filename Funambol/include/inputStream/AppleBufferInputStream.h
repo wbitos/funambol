@@ -38,9 +38,9 @@
 
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreFoundation/CFStream.h>
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
-#include "inputStream/AppleInputStream.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/inputStream/AppleInputStream.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

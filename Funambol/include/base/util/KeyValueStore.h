@@ -39,10 +39,10 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/fscapi.h"
-#include "base/util/Enumeration.h"
-#include "base/util/StringBuffer.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/Enumeration.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

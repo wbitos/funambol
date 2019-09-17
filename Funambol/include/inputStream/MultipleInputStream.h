@@ -37,8 +37,8 @@
 #define INCL_MULTIPLE_INPUT_STREAM
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "inputStream/InputStream.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/inputStream/InputStream.h>
 
 BEGIN_NAMESPACE
 

@@ -37,7 +37,7 @@
     #define INCL_DEVICE_MANAGER_UTIL_SPDM
 /** @cond DEV */
 
-    #include "base/fscapi.h"
+    #include <Funambol/base/fscapi.h>
 
     /*
      * Extracts the node name from the node path

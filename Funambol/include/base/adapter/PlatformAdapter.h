@@ -37,9 +37,9 @@
 #define INCL_PLATFORM_ADAPTER
 /** @cond API */
 
-#include "base/fscapi.h"
-#include "base/globalsdef.h"
-#include "base/util/ArrayList.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/ArrayList.h>
 
 BEGIN_NAMESPACE
 

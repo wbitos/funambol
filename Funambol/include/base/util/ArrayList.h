@@ -38,10 +38,10 @@
 #define INCL_BASE_UTIL_ARRAY_LIST
 /** @cond DEV */
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
-#include "base/util/ArrayElement.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

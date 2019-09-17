@@ -38,9 +38,9 @@
 #define INCL_SYNC_ITEM_LISTENER
 /** @cond DEV */
 
-#include "event/SyncItemEvent.h"
-#include "event/Listener.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/SyncItemEvent.h>
+#include <Funambol/event/Listener.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

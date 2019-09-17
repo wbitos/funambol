@@ -38,10 +38,10 @@
 #define INCL_NEXT_NONCE
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/utils.h"
-#include "base/base64.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/base64.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

@@ -37,8 +37,8 @@
 #define INCL_CLAUSE
 /** @cond DEV */
 
-#include "base/util/ArrayElement.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

@@ -37,12 +37,12 @@
 #define INCL_BASE_UTILS
 /** @cond DEV */
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "base/md5.h"
-#include "base/base64.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/base/md5.h>
+#include <Funambol/base/base64.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 // Default len for stringdup (means: use source string len)
 #define STRINGDUP_NOLEN 0xFFFFFFFF

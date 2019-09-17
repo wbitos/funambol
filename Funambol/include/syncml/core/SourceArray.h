@@ -38,10 +38,10 @@
 #define INCL_SOURCE_ARRAY
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "syncml/core/Source.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/syncml/core/Source.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

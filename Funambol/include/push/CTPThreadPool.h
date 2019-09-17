@@ -36,9 +36,9 @@
 #ifndef INCL_CTP_THREAD_POOL
 #define INCL_CTP_THREAD_POOL
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
 
 BEGIN_NAMESPACE
 

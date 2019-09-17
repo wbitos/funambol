@@ -39,13 +39,13 @@
 #define INCL_META
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/MetInf.h"
-#include "syncml/core/Anchor.h"
-#include "syncml/core/NextNonce.h"
-#include "syncml/core/Mem.h"
-#include "syncml/core/EMI.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/MetInf.h>
+#include <Funambol/syncml/core/Anchor.h>
+#include <Funambol/syncml/core/NextNonce.h>
+#include <Funambol/syncml/core/Mem.h>
+#include <Funambol/syncml/core/EMI.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

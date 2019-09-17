@@ -36,12 +36,12 @@
 #define INCL_DEF_CONFIG
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "spds/AccessConfig.h"
-#include "spds/DeviceConfig.h"
-#include "spds/SyncSourceConfig.h"
-#include "spds/SyncManagerConfig.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/spds/AccessConfig.h>
+#include <Funambol/spds/DeviceConfig.h>
+#include <Funambol/spds/SyncSourceConfig.h>
+#include <Funambol/spds/SyncManagerConfig.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

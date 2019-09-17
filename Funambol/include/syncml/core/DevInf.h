@@ -38,13 +38,13 @@
 #define INCL_DEVINF
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "syncml/core/VerDTD.h"
-#include "syncml/core/DataStore.h"
-#include "syncml/core/CTCap.h"
-#include "syncml/core/Ext.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/syncml/core/VerDTD.h>
+#include <Funambol/syncml/core/DataStore.h>
+#include <Funambol/syncml/core/CTCap.h>
+#include <Funambol/syncml/core/Ext.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

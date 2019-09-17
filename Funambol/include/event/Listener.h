@@ -36,8 +36,8 @@
 
 #ifndef INCL_LISTENER
 #define INCL_LISTENER
-#include "base/globalsdef.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 BEGIN_NAMESPACE
 /** @cond DEV */

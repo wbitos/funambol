@@ -38,11 +38,11 @@
 #define INCL_MAIL
 /** @cond DEV */
 
-#include "base/util/ArrayElement.h"
-#include "base/util/StringBuffer.h"
-#include "spds/MailMessage.h"
-#include "spds/EmailData.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/spds/MailMessage.h>
+#include <Funambol/spds/EmailData.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

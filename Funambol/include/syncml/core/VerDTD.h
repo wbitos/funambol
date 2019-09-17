@@ -38,8 +38,8 @@
 #define INCL_VER_DTD
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

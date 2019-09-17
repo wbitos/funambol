@@ -40,8 +40,8 @@
 
 // The class includes the name of the tag that are used into the parser
 
-#include "base/fscapi.h"
-#include "syncml/core/core.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/core.h>
 
 #define SYNC_ML             "SyncML"
 #define SYNC_BODY           "SyncBody"

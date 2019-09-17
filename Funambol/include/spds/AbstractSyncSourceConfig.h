@@ -41,10 +41,10 @@
 /** @addtogroup Client */
 /** @{ */
 
-    #include "base/fscapi.h"
-    #include "spds/constants.h"
-    #include "syncml/core/CTCap.h"
-#include "base/globalsdef.h"
+    #include <Funambol/base/fscapi.h>
+    #include <Funambol/spds/constants.h>
+    #include <Funambol/syncml/core/CTCap.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

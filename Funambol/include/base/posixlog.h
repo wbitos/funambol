@@ -37,13 +37,13 @@
 # define INCL_POSIX_LOG
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/Log.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 #include <stdio.h>
 #include <time.h>
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

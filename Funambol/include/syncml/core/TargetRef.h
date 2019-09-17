@@ -38,10 +38,10 @@
 #define INCL_TARGET_REF
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "syncml/core/Target.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/syncml/core/Target.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

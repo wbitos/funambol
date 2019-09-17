@@ -37,14 +37,14 @@
 #define INCL_SYNCML_BUILDER
 /** @cond DEV */
 
-#include "spds/DataTransformer.h"
-#include "spds/SyncSource.h"
-#include "spds/SyncMap.h"
-#include "syncml/core/TagNames.h"
-#include "syncml/core/ObjectDel.h"
-#include "syncml/formatter/Formatter.h"
-#include "base/globalsdef.h"
-#include "spds/Chunk.h"
+#include <Funambol/spds/DataTransformer.h>
+#include <Funambol/spds/SyncSource.h>
+#include <Funambol/spds/SyncMap.h>
+#include <Funambol/syncml/core/TagNames.h>
+#include <Funambol/syncml/core/ObjectDel.h>
+#include <Funambol/syncml/formatter/Formatter.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/spds/Chunk.h>
 
 BEGIN_NAMESPACE
 

@@ -39,11 +39,11 @@
 
 //#include <iostream>
 
-#include "base/fscapi.h"
-#include "syncml/core/SyncNotification.h" 
-#include "base/util/ArrayList.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/SyncNotification.h> 
+#include <Funambol/base/util/ArrayList.h>
 
-#include "push/CTPParam.h"
+#include <Funambol/push/CTPParam.h>
 
 BEGIN_NAMESPACE
 
@@ -68,7 +68,7 @@ BEGIN_NAMESPACE
 
 
 #define MAX_MESSAGE_SIZE        256
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
     
 class CTPMessage {
 

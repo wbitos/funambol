@@ -38,7 +38,7 @@
 #define INCL_MARK
 /** @cond DEV */
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 #define DRAFT     "draft"
 #define FINAL     "final"

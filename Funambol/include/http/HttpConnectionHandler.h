@@ -36,7 +36,7 @@
 #ifndef __HTTP_CONNECTION_HANDLER_H__
 #define __HTTP_CONNECTION_HANDLER_H__
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 #if defined(FUN_IPHONE)
 #include <SystemConfiguration/SystemConfiguration.h>
@@ -46,12 +46,12 @@
 #include <CoreServices/CoreServices.h>
 #endif
 
-#include "http/URL.h"
-#include "http/Proxy.h"
-#include "http/TransportAgent.h"
-#include "base/Log.h"
-#include "http/HttpAuthentication.h"
-#include "inputStream/OutputStream.h"
+#include <Funambol/http/URL.h>
+#include <Funambol/http/Proxy.h>
+#include <Funambol/http/TransportAgent.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/http/HttpAuthentication.h>
+#include <Funambol/inputStream/OutputStream.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

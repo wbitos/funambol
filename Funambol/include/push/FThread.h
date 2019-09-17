@@ -35,7 +35,7 @@
 
 #ifndef INCL_FTHREAD
 #define INCL_FTHREAD
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 #include <pthread.h>
 

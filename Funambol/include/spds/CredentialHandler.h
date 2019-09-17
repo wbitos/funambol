@@ -37,13 +37,13 @@
     #define INCL_CREDENTIAL_HANDLER
 /** @cond DEV */
 
-    #include "base/fscapi.h"
-    #include "base/constants.h"
-    #include "base/util/utils.h"
-    #include "spds/constants.h"
-    #include "syncml/core/TagNames.h"
-    #include "syncml/core/ObjectDel.h"
-#include "base/globalsdef.h"
+    #include <Funambol/base/fscapi.h>
+    #include <Funambol/base/constants.h>
+    #include <Funambol/base/util/utils.h>
+    #include <Funambol/spds/constants.h>
+    #include <Funambol/syncml/core/TagNames.h>
+    #include <Funambol/syncml/core/ObjectDel.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

@@ -38,9 +38,9 @@
 #define INCL_SYNC_STATUS_LISTENER
 /** @cond DEV */
 
-#include "event/SyncStatusEvent.h"
-#include "event/Listener.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/SyncStatusEvent.h>
+#include <Funambol/event/Listener.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

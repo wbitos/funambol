@@ -39,7 +39,7 @@
 #define INCL_SPDS_CONSTANTS
 /** @cond DEV */
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 #define DIM_SOURCE_NAME      128
 #define DIM_SOURCE_URI        64

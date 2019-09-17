@@ -36,9 +36,9 @@
 #ifndef __MSU_MANAGER_H__
 #define __MSU_MANAGER_H__
 
-#include "http/HttpConnection.h"
-#include "msu/MSUDeviceInfo.h"
-#include "msu/JsonMSUMessage.h"
+#include <Funambol/http/HttpConnection.h>
+#include <Funambol/msu/MSUDeviceInfo.h>
+#include <Funambol/msu/JsonMSUMessage.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

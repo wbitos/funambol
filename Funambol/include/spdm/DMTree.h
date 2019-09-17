@@ -37,10 +37,10 @@
     #define INCL_DMTREE
 /** @cond DEV */
 
-    #include "base/globalsdef.h"
-    #include "base/util/StringBuffer.h"
-    #include "spdm/constants.h"
-    #include "spdm/ManagementNode.h"
+    #include <Funambol/base/globalsdef.h>
+    #include <Funambol/base/util/StringBuffer.h>
+    #include <Funambol/spdm/constants.h>
+    #include <Funambol/spdm/ManagementNode.h>
 
     BEGIN_NAMESPACE
 

@@ -38,7 +38,7 @@
 #define INCL_DEV_TYP
 /** @cond DEV */
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 #define PAGER       "pager";
 #define HANDHELD    "handheld";

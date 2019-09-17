@@ -39,11 +39,11 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/fscapi.h"
-#include "base/util/KeyValuePair.h"
-#include "base/util/KeyValueStore.h"
-#include "base/util/ArrayListEnumeration.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/base/util/KeyValueStore.h>
+#include <Funambol/base/util/ArrayListEnumeration.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

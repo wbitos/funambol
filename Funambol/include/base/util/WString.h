@@ -37,9 +37,9 @@
 #define INCL_WSTRING
 /** @cond DEV */
 
-#include "base/util/ArrayElement.h"
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
 BEGIN_NAMESPACE
 
 class ArrayList;

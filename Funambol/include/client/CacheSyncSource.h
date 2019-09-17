@@ -39,18 +39,18 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "spds/constants.h"
-#include "spds/SyncItem.h"
-#include "spds/AbstractSyncSourceConfig.h"
-#include "spds/SyncSourceReport.h"
-#include "spds/SyncSource.h"
-#include "syncml/core/TagNames.h"
-#include "base/util/Enumeration.h"
-#include "base/util/KeyValueStore.h"
-#include "base/util/KeyValuePair.h"
-#include "event/FireEvent.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/spds/SyncItem.h>
+#include <Funambol/spds/AbstractSyncSourceConfig.h>
+#include <Funambol/spds/SyncSourceReport.h>
+#include <Funambol/spds/SyncSource.h>
+#include <Funambol/syncml/core/TagNames.h>
+#include <Funambol/base/util/Enumeration.h>
+#include <Funambol/base/util/KeyValueStore.h>
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/event/FireEvent.h>
 
 BEGIN_NAMESPACE
 

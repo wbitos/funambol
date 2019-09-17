@@ -38,12 +38,12 @@
 #define INCL_ATOMIC
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/AbstractCommand.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/AbstractCommand.h>
 
 
 #define ATOMIC_COMMAND_NAME "Atomic"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

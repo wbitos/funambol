@@ -38,11 +38,11 @@
 #define INCL_OBJECT_DEL
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "base/util/utils.h"
-#include "base/util/StringBuffer.h"
-#include "syncml/core/TagNames.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/syncml/core/TagNames.h>
 
 BEGIN_NAMESPACE
 

@@ -38,11 +38,11 @@
 #define INCL_MAP_ITEM
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "syncml/core/Target.h"
-#include "syncml/core/Source.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/syncml/core/Target.h>
+#include <Funambol/syncml/core/Source.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

@@ -38,16 +38,16 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/fscapi.h"
-#include "http/constants.h"
-#include "spdm/constants.h"
-#include "spds/SyncManagerConfig.h"
-#include "spds/AccessConfig.h"
-#include "spds/DeviceConfig.h"
-#include "spds/SyncSourceConfig.h"
-#include "spdm/ManagementNode.h"
-#include "base/globalsdef.h"
-#include "syncml/core/DataStore.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/http/constants.h>
+#include <Funambol/spdm/constants.h>
+#include <Funambol/spds/SyncManagerConfig.h>
+#include <Funambol/spds/AccessConfig.h>
+#include <Funambol/spds/DeviceConfig.h>
+#include <Funambol/spds/SyncSourceConfig.h>
+#include <Funambol/spdm/ManagementNode.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/syncml/core/DataStore.h>
 
 BEGIN_NAMESPACE
 

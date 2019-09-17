@@ -38,10 +38,10 @@
 #define INCL_KEY_VALUE_PAIR
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "base/util/StringBuffer.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

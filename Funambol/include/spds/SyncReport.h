@@ -39,19 +39,19 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/fscapi.h"
-#include "base/Log.h"
-#include "base/util/StringBuffer.h"
-#include "spds/SyncSource.h"
-#include "spds/constants.h"
-#include "spds/SyncSourceReport.h"
-#include "spds/AbstractSyncConfig.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/spds/SyncSource.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/spds/SyncSourceReport.h>
+#include <Funambol/spds/AbstractSyncConfig.h>
 
 
 // To notify if status comes from Client or server
 #define CLIENT      "Client"
 #define SERVER      "Server"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

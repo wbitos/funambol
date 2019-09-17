@@ -36,9 +36,9 @@
 #ifndef INCL_ARRAY_LIST_ENUMERATION
 #define INCL_ARRAY_LIST_ENUMERATION
 
-#include "base/util/ArrayList.h"
-#include "base/util/Enumeration.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/base/util/Enumeration.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

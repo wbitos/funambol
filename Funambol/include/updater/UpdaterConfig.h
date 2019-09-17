@@ -37,14 +37,14 @@
 #define INCL_UPDATE_CONFIG
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "client/DMTClientConfig.h"
-#include "spdm/ManagementNode.h"
-#include "spdm/DMTreeFactory.h"
-#include "spdm/DMTree.h"
-#include "base/util/utils.h"
-#include "base/util/StringBuffer.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/client/DMTClientConfig.h>
+#include <Funambol/spdm/ManagementNode.h>
+#include <Funambol/spdm/DMTreeFactory.h>
+#include <Funambol/spdm/DMTree.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

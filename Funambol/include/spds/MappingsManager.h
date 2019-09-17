@@ -37,9 +37,9 @@
 #define INCL_MAPPINGS_MANAGER
 /** @cond DEV */
 
-#include "spds/MappingStoreBuilder.h"
-#include "base/util/PropertyFile.h"
-#include "base/util/utils.h"
+#include <Funambol/spds/MappingStoreBuilder.h>
+#include <Funambol/base/util/PropertyFile.h>
+#include <Funambol/base/util/utils.h>
 
 BEGIN_NAMESPACE
 

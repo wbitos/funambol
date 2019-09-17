@@ -36,10 +36,10 @@
     #define INCL_B64_DECODER
 /** @cond DEV */
 
-    #include "spds/DataTransformer.h"
+    #include <Funambol/spds/DataTransformer.h>
 
     #define DT_B64 "b64"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

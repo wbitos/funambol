@@ -37,9 +37,9 @@
 #define INCL_FIELDCLAUSE
 /** @cond DEV */
 
-#include "base/util/ArrayList.h"
-#include "filter/Clause.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/filter/Clause.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

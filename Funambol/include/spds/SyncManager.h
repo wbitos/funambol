@@ -39,18 +39,18 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/globalsdef.h"
-#include "base/util/ArrayList.h"
-#include "http/TransportAgent.h"
-#include "spds/constants.h"
-#include "spds/AbstractSyncConfig.h"
-#include "spds/SyncSource.h"
-#include "spds/SyncMLBuilder.h"
-#include "spds/SyncMLProcessor.h"
-#include "spds/CredentialHandler.h"
-#include "spds/CredentialHandler.h"
-#include "spds/SyncReport.h"
-#include "spds/MappingsManager.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/http/TransportAgent.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/spds/AbstractSyncConfig.h>
+#include <Funambol/spds/SyncSource.h>
+#include <Funambol/spds/SyncMLBuilder.h>
+#include <Funambol/spds/SyncMLProcessor.h>
+#include <Funambol/spds/CredentialHandler.h>
+#include <Funambol/spds/CredentialHandler.h>
+#include <Funambol/spds/SyncReport.h>
+#include <Funambol/spds/MappingsManager.h>
 
 // Tolerance to data size for incoming items (106%) -> will be allocated some more space.
 #define DATA_SIZE_TOLERANCE      1.06

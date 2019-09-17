@@ -38,12 +38,12 @@
 #define INCL_PARSER
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/utils.h"
-#include "base/util/XMLProcessor.h"
-#include "base/util/ArrayList.h"
-#include "syncml/core/ObjectDel.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/util/XMLProcessor.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/syncml/core/ObjectDel.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

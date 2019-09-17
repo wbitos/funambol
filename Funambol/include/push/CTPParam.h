@@ -37,9 +37,9 @@
 #define INCL_CTP_PARAM
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "base/Log.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/Log.h>
    
 /**
 * Params
@@ -52,7 +52,7 @@
 #define P_NONCE       0x06
 #define P_SAN         0x07   
 #define P_SLEEP       0x09   
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

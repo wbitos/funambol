@@ -38,10 +38,10 @@
 #define INCL_CTTYPE_SUPPORTED
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "base/util/ArrayElement.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

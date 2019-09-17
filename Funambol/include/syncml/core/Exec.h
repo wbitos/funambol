@@ -38,11 +38,11 @@
 #define INCL_EXEC
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/ModificationCommand.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/ModificationCommand.h>
 
 #define EXEC_COMMAND_NAME "Exec"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

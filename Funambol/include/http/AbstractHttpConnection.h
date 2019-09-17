@@ -37,17 +37,17 @@
 #define INCL_ABSTRACT_HTTP_CONNECTION
 /** @cond API */
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
-#include "base/constants.h"
-#include "http/constants.h"
-#include "http/HttpAuthentication.h"
-#include "http/Proxy.h"
-#include "base/Log.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/StringMap.h"
-#include "inputStream/InputStream.h"
-#include "inputStream/OutputStream.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/constants.h>
+#include <Funambol/http/constants.h>
+#include <Funambol/http/HttpAuthentication.h>
+#include <Funambol/http/Proxy.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/StringMap.h>
+#include <Funambol/inputStream/InputStream.h>
+#include <Funambol/inputStream/OutputStream.h>
 
 BEGIN_FUNAMBOL_NAMESPACE
 

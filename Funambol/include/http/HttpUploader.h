@@ -37,16 +37,16 @@
 #define INCL_HTTP_UPLOADER
 /** @cond DEV */
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
-#include "base/constants.h"
-#include "http/constants.h"
-#include "base/Log.h"
-#include "base/util/StringBuffer.h"
-#include "inputStream/InputStream.h"
-#include "inputStream/StringOutputStream.h"
-#include "http/URL.h"
-#include "http/HttpConnection.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/constants.h>
+#include <Funambol/http/constants.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/inputStream/InputStream.h>
+#include <Funambol/inputStream/StringOutputStream.h>
+#include <Funambol/http/URL.h>
+#include <Funambol/http/HttpConnection.h>
 
 BEGIN_NAMESPACE
 

@@ -43,8 +43,8 @@
 #define INCL_NOTIF_PROCESSOR
 /** @cond DEV */
 
-#include "syncml/core/SyncAlert.h"
-#include "base/globalsdef.h"
+#include <Funambol/syncml/core/SyncAlert.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

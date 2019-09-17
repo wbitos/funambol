@@ -36,7 +36,7 @@
 #ifndef INCL_HASH_PROVIDER_H
 #define INCL_HASH_PROVIDER_H
 
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/util/StringBuffer.h>
 
 BEGIN_NAMESPACE
 

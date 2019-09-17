@@ -37,12 +37,12 @@
     #define INCL_TRANSPORT_AGENT_FACTORY
 /** @cond DEV */
 
-    #include "base/fscapi.h"
+    #include <Funambol/base/fscapi.h>
 
-    #include "http/URL.h"
-    #include "http/Proxy.h"
-    #include "http/TransportAgent.h"
-#include "base/globalsdef.h"
+    #include <Funambol/http/URL.h>
+    #include <Funambol/http/Proxy.h>
+    #include <Funambol/http/TransportAgent.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

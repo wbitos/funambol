@@ -38,9 +38,9 @@
 #define INCL_DATA
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "syncml/core/Constants.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/syncml/core/Constants.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

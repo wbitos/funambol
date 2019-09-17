@@ -37,9 +37,9 @@
 #define INCL_BOUNDARY_INPUT_STREAM
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
-#include "inputStream/InputStream.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/inputStream/InputStream.h>
 
 
 BEGIN_NAMESPACE

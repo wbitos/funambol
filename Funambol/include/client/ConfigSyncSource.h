@@ -35,10 +35,10 @@
 #ifndef INCL_CONFIG_SYNC_SOURCE
 #define INCL_CONFIG_SYNC_SOURCE
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
-#include "base/util/utils.h"
-#include "client/CacheSyncSource.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/client/CacheSyncSource.h>
 
 BEGIN_NAMESPACE
 

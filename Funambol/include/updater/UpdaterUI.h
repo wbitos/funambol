@@ -36,8 +36,8 @@
 #ifndef INCL_UPDATER_UI
 #define INCL_UPDATER_UI
 
-#include "base/globalsdef.h"
-#include "updater/UpdaterConfig.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/updater/UpdaterConfig.h>
 
 BEGIN_NAMESPACE
 

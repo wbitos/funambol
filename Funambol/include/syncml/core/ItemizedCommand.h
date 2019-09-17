@@ -38,13 +38,13 @@
 #define INCL_ITEMIZED_COMMAND
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
-#include "syncml/core/Meta.h"
-#include "syncml/core/Item.h"
-#include "syncml/core/CmdID.h"
-#include "syncml/core/AbstractCommand.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/syncml/core/Meta.h>
+#include <Funambol/syncml/core/Item.h>
+#include <Funambol/syncml/core/CmdID.h>
+#include <Funambol/syncml/core/AbstractCommand.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

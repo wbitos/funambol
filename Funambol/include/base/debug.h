@@ -39,7 +39,7 @@
 #define INCL_BASE_DEBUG
 /** @cond DEV */
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 /**
  * This constants are for debug messages that won't be removed from the code

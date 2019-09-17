@@ -39,14 +39,14 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "spds/constants.h"
-#include "spds/SyncItem.h"
-#include "spds/SyncStatus.h"
-#include "spds/SyncSourceReport.h"
-#include "base/util/MemoryKeyValueStore.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/spds/SyncItem.h>
+#include <Funambol/spds/SyncStatus.h>
+#include <Funambol/spds/SyncSourceReport.h>
+#include <Funambol/base/util/MemoryKeyValueStore.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

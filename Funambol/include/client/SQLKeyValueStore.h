@@ -39,9 +39,9 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/util/KeyValueStore.h"
-#include "base/util/ArrayListEnumeration.h"
-#include "base/util/Enumeration.h"
+#include <Funambol/base/util/KeyValueStore.h>
+#include <Funambol/base/util/ArrayListEnumeration.h>
+#include <Funambol/base/util/Enumeration.h>
 
 BEGIN_NAMESPACE
 

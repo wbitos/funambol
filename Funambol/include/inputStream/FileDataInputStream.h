@@ -37,10 +37,10 @@
 #define INCL_FILE_OBJECT_INPUT_STREAM
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "inputStream/MultipleInputStream.h"
-#include "base/util/EncodingHelper.h"
-#include "spds/FileData.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/inputStream/MultipleInputStream.h>
+#include <Funambol/base/util/EncodingHelper.h>
+#include <Funambol/spds/FileData.h>
 
 BEGIN_NAMESPACE
 

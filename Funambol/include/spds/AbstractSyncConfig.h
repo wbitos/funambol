@@ -38,9 +38,9 @@
 /** @addtogroup Client */
 /** @{ */
 
-#include "base/fscapi.h"
-#include "spds/AbstractSyncSourceConfig.h"
-#include "base/globalsdef.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/spds/AbstractSyncSourceConfig.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

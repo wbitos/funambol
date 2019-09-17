@@ -37,17 +37,17 @@
     #define INCL_SYNCML_PROCESSOR
 /** @cond DEV */
 
-    #include "base/globalsdef.h"
-    #include "base/util/ArrayList.h"
-    #include "base/util/XMLProcessor.h"
-    #include "spds/SyncSource.h"
-    #include "spds/SyncItem.h"
-    #include "spds/SyncItemStatus.h"
-    #include "syncml/core/TagNames.h"
-    #include "syncml/core/ObjectDel.h"
-    #include "syncml/parser/Parser.h"
-    #include "spds/SyncReport.h"
-    #include "spds/SyncItemKeys.h"
+    #include <Funambol/base/globalsdef.h>
+    #include <Funambol/base/util/ArrayList.h>
+    #include <Funambol/base/util/XMLProcessor.h>
+    #include <Funambol/spds/SyncSource.h>
+    #include <Funambol/spds/SyncItem.h>
+    #include <Funambol/spds/SyncItemStatus.h>
+    #include <Funambol/syncml/core/TagNames.h>
+    #include <Funambol/syncml/core/ObjectDel.h>
+    #include <Funambol/syncml/parser/Parser.h>
+    #include <Funambol/spds/SyncReport.h>
+    #include <Funambol/spds/SyncItemKeys.h>
 
 BEGIN_NAMESPACE
 

@@ -37,9 +37,9 @@
 #define INCL_MAPPING_STORE_BUILDER
 /** @cond DEV */
 
-#include "base/adapter/PlatformAdapter.h"
-#include "base/util/KeyValueStore.h"
-#include "base/util/PropertyFile.h"
+#include <Funambol/base/adapter/PlatformAdapter.h>
+#include <Funambol/base/util/KeyValueStore.h>
+#include <Funambol/base/util/PropertyFile.h>
 
 BEGIN_NAMESPACE
 

@@ -41,10 +41,10 @@
     #define INCL_DATA_TRANSFORMER_FACTORY
 /** @cond DEV */
 
-    #include "spds/DataTransformer.h"
+    #include <Funambol/spds/DataTransformer.h>
 
     #define DF_FORMATTERS "b64;des;"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

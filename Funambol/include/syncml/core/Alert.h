@@ -38,16 +38,16 @@
 #define INCL_ALERT
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/ArrayList.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayList.h>
 
-#include "syncml/core/ItemizedCommand.h"
-#include "syncml/core/Cred.h"
-#include "syncml/core/CmdID.h"
-#include "syncml/core/ItemizedCommand.h"
+#include <Funambol/syncml/core/ItemizedCommand.h>
+#include <Funambol/syncml/core/Cred.h>
+#include <Funambol/syncml/core/CmdID.h>
+#include <Funambol/syncml/core/ItemizedCommand.h>
 
 #define ALERT_COMMAND_NAME "Alert"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

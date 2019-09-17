@@ -36,10 +36,10 @@
     #define INCL_HTTP_URL
 /** @cond DEV */
 
-    #include "base/globalsdef.h"
-    #include "base/fscapi.h"
-    #include "base/constants.h"
-    #include "http/constants.h"
+    #include <Funambol/base/globalsdef.h>
+    #include <Funambol/base/fscapi.h>
+    #include <Funambol/base/constants.h>
+    #include <Funambol/http/constants.h>
 
 BEGIN_NAMESPACE
 

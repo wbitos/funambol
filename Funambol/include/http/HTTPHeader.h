@@ -36,8 +36,8 @@
 
 // This class represents an HTTP header as read from a buffer or stream
 //
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 #ifndef INCL_HTTP_HEADER
     #define INCL_HTTP_HEADER
@@ -45,7 +45,7 @@
 
     #define DIM_HEADERS 50
     #define MSG_BAD_PROTOCOL "BAD PROTOCOL"
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

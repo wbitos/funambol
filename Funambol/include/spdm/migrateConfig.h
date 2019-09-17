@@ -33,10 +33,10 @@
  * the words "Powered by Funambol".
  */
 
-#include "base/util/StringBuffer.h"
-#include "base/util/utils.h"
-#include "base/fscapi.h"
-#include "spdm/constants.h"
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/spdm/constants.h>
 
 #define CONFTXT "config.txt"
 #define CONFINI "config.ini"

@@ -37,7 +37,7 @@
 #define INCL_BASE_MESSAGES
 /** @cond DEV */
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 //
 // NOTE: these messages are client specific and targeted to the users (for

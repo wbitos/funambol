@@ -39,12 +39,12 @@
 
 #include <string.h>
 
-#include "base/globalsdef.h"
-#include "base/fscapi.h"
-#include "base/util/ArrayElement.h"
-#include "spdm/ManagementNode.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/StringMap.h"
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/ArrayElement.h>
+#include <Funambol/spdm/ManagementNode.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/StringMap.h>
 
 
 BEGIN_NAMESPACE

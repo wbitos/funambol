@@ -36,13 +36,13 @@
 #define INCL_DEVICE_CONFIG
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "spds/constants.h"
-#include "syncml/core/VerDTD.h"
-#include "base/Log.h"
-#include "base/globalsdef.h"
-#include "base/util/ArrayList.h"
-#include "syncml/core/DataStore.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/syncml/core/VerDTD.h>
+#include <Funambol/base/Log.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/syncml/core/DataStore.h>
 
 BEGIN_NAMESPACE
 

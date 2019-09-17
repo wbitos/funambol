@@ -38,7 +38,7 @@
 #define INCL_CORE_CONSTANTS
 /** @cond DEV */
 
-#include "base/fscapi.h"
+#include <Funambol/base/fscapi.h>
 
 #define DIM_64    64
 #define DIM_512  512

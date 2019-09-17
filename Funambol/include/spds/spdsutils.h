@@ -37,11 +37,11 @@
 #define INCL_SPDS_UTIL
 /** @cond DEV */
 
-#include "base/util/ArrayList.h"
-#include "spds/constants.h"
-#include "spds/SyncItem.h"
-#include "spds/SyncItemStatus.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/util/ArrayList.h>
+#include <Funambol/spds/constants.h>
+#include <Funambol/spds/SyncItem.h>
+#include <Funambol/spds/SyncItemStatus.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 BEGIN_NAMESPACE
 

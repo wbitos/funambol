@@ -38,9 +38,9 @@
 #define INCL_TRANSPORT_LISTENER
 /** @cond DEV */
 
-#include "event/TransportEvent.h"
-#include "event/Listener.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/TransportEvent.h>
+#include <Funambol/event/Listener.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

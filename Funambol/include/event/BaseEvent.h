@@ -36,7 +36,7 @@
 
 #ifndef INCL_BASE_EVENT
 #define INCL_BASE_EVENT
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 /** @cond DEV */

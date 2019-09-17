@@ -37,10 +37,10 @@
 #define INCL_SYNC_EVENT
 /** @cond DEV */
 
-#include "event/BaseEvent.h"
-#include "event/constants.h"
-#include "base/util/utils.h"
-#include "base/globalsdef.h"
+#include <Funambol/event/BaseEvent.h>
+#include <Funambol/event/constants.h>
+#include <Funambol/base/util/utils.h>
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

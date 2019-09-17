@@ -37,13 +37,13 @@
 #define INCL_XML_PROCESSOR
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/util/StringBuffer.h"
-#include "base/util/KeyValuePair.h"
-#include "base/util/ArrayList.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/util/StringBuffer.h>
+#include <Funambol/base/util/KeyValuePair.h>
+#include <Funambol/base/util/ArrayList.h>
 
 #define DIM_TAG 32
-#include "base/globalsdef.h"
+#include <Funambol/base/globalsdef.h>
 
 BEGIN_NAMESPACE
 

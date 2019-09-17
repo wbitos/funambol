@@ -37,10 +37,10 @@
 #define INCL_ENCODING_HELPER
 /** @cond DEV */
 
-#include "base/fscapi.h"
-#include "base/constants.h"
-#include "base/globalsdef.h"
-#include "base/util/StringBuffer.h"
+#include <Funambol/base/fscapi.h>
+#include <Funambol/base/constants.h>
+#include <Funambol/base/globalsdef.h>
+#include <Funambol/base/util/StringBuffer.h>
 
 BEGIN_NAMESPACE
 
