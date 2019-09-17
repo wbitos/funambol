@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/wbitos/funambol.git", :tag => "#{spec.version}" }
 
-
+  spec.module_map = 'Funambol.modulemap'
   spec.libraries = 'c++'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
