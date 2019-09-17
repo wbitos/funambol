@@ -84,25 +84,25 @@ Pod::Spec.new do |spec|
   spec.ios.pod_target_xcconfig = { 
     'FUNAMBOL_SRC_ROOT' => src_root,
     'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/Funambol/include"',
-    'COMPILE_SOURCES_AS' => 'Objective-C++',
+    'CLANG_LANGUAGE_COMPILE_SOURCES_AS' => 'Objective-C++',
     'GCC_PREPROCESSOR_DEFINITIONS' => '"ENABLE_NAMESPACE" "FUNAMBOL_BUILD_API" "FUN_IPHONE"' 
   }
   spec.osx.pod_target_xcconfig = { 
     'FUNAMBOL_SRC_ROOT' => src_root,
     'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/include"',
-    'COMPILE_SOURCES_AS' => 'Objective-C++',
+    'CLANG_LANGUAGE_COMPILE_SOURCES_AS' => 'Objective-C++',
     'GCC_PREPROCESSOR_DEFINITIONS' => '"ENABLE_NAMESPACE" "FUNAMBOL_BUILD_API"' 
   }
   spec.watchos.pod_target_xcconfig = { 
     'FUNAMBOL_SRC_ROOT' => src_root,
     'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/include"',
-    'COMPILE_SOURCES_AS' => 'Objective-C++',
+    'CLANG_LANGUAGE_COMPILE_SOURCES_AS' => 'Objective-C++',
     'GCC_PREPROCESSOR_DEFINITIONS' => '"ENABLE_NAMESPACE" "FUNAMBOL_BUILD_API" "FUN_IPHONE"' 
   }
   spec.tvos.pod_target_xcconfig = { 
     'FUNAMBOL_SRC_ROOT' => src_root,
     'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/include"',
-    'COMPILE_SOURCES_AS' => 'Objective-C++',
+    'CLANG_LANGUAGE_COMPILE_SOURCES_AS' => 'Objective-C++',
     'GCC_PREPROCESSOR_DEFINITIONS' => '"ENABLE_NAMESPACE" "FUNAMBOL_BUILD_API" "FUN_IPHONE"' 
   }
 
