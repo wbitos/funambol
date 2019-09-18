@@ -124,7 +124,7 @@ Pod::Spec.new do |spec|
 
   spec.framework = 'CFNetwork', 'SystemConfiguration'
   #spec.libraries = 'sqlite3'
-  spec.library = 'sqlite3'
+  #spec.library = 'sqlite3'
   # spec.pod_target_xcconfig = { 
   #   'FUNAMBOL_SRC_ROOT' => src_root,
   #   'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/Funambol/include"',
@@ -417,7 +417,7 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
-
+  spec.libraries = "sqlite3"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -431,4 +431,5 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   spec.dependency "GZIP"
+  spec.dependency "sqlite3"
 end
