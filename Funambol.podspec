@@ -123,8 +123,8 @@ Pod::Spec.new do |spec|
   }
 
   spec.framework = 'CFNetwork', 'SystemConfiguration'
-  spec.libraries = 'sqlite3'
-  
+  #spec.libraries = 'sqlite3'
+  spec.library = 'sqlite3'
   # spec.pod_target_xcconfig = { 
   #   'FUNAMBOL_SRC_ROOT' => src_root,
   #   'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(FUNAMBOL_SRC_ROOT)/Funambol/include"',
