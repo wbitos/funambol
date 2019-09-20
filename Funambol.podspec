@@ -390,7 +390,7 @@ Pod::Spec.new do |spec|
 
   # spec.public_header_files = "Classes/**/*.h"
   spec.header_dir = "Funambol"
-  spec.header_mappings_dir = 'Funambol/include'
+  spec.header_mappings_dir = 'Funambol/include/Funambol'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
